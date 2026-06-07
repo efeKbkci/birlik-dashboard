@@ -1,0 +1,94 @@
+﻿using Dashboard.Shared;
+using Dashboard.Shared.Interfaces;
+using Dashboard.Trips.Services;
+using DevExpress.XtraEditors;
+using DevExpress.XtraSplashScreen;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Dashboard.Trips.UI
+{
+    public partial class TripsManagementViewHTML : XtraUserControl, IRefreshable
+    {
+        private readonly ITripManagementService _tripService = new TripManagementApiService();
+
+        public TripsManagementViewHTML()
+        {
+            InitializeComponent();
+        }
+
+        public async Task RefreshDataAsync()
+        {
+            await LoadTripManagementDataAsync();
+        }
+
+        private async Task LoadTripManagementDataAsync()
+        {
+            IOverlaySplashScreenHandle handle = null;
+
+            try
+            {
+                // 1. SADECE BU KONTROLÜN ÜZERİNİ KARART (MainForm kitlenmez!)
+                handle = SplashScreenManager.ShowOverlayForm(this);
+
+                // 2. Global State'ten Firma ID'sini al
+                int currentCompanyId = GlobalState.Session.CompanyDto.Id;
+
+                // 3. Veriyi Arka Planda Çek
+                var pageData = await _tripService.GetPageDataAsync(currentCompanyId);
+
+                // 4. Verileri Ekrana Bağla
+                if (pageData != null)
+                {
+                    htmlContentControl2.DataContext = new
+                    {
+                        TodayTrips = pageData.TodayTotalTrips,
+                        ActiveVehicles = pageData.ActiveVehiclesCount,
+                        Driver = pageData.ActiveDriversCount
+                    };
+
+                    // GridControl ataması devam ediyor...
+                    tripTable.DataSource = pageData.Trips;
+                }
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show($"Sefer verileri yüklenirken bir hata oluştu: {ex.Message}", "Bağlantı Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                // 5. KARARTMAYI KALDIR (Veri geldi, ekran aydınlandı)
+                if (handle != null)
+                {
+                    SplashScreenManager.CloseOverlayForm(handle);
+                }
+            }
+        }
+
+        private async void NewTripButtonClicked(object sender, EventArgs e)
+        {
+            // using bloğu, form kapandığında onu RAM'den tamamen temizler
+            using var addForm = new AddTripForm();
+
+            DialogResult result = addForm.ShowDialog(this);
+
+            // Form kapandıktan sonra kod buraya düşer ve sonucu kontrol ederiz:
+            if (result == DialogResult.OK)
+            {
+                XtraMessageBox.Show("Test Başarılı! Ekleme ekranı kapandı ve 'Kaydet' seçildi.", "Sistem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                await RefreshDataAsync(); 
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                XtraMessageBox.Show("Kullanıcı işlemi iptal etti veya pencereyi kapattı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+    }
+}

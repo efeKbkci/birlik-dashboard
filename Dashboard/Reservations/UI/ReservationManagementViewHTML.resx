@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="svgImageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Data.v24.1" name="DevExpress.Data.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="svgImageCollection1.arrow" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAFcBAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjQwcHgiIGhl
+        aWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0i
+        NDAiIHJ4PSIxMiIgZmlsbD0iI0U2RThFQSIgLz4NCiAgPHBhdGggZD0iTTExLjQgMjZMMTAgMjQuNkwx
+        Ny40IDE3LjE1TDIxLjQgMjEuMTVMMjYuNiAxNkgyNFYxNEgzMFYyMEgyOFYxNy40TDIxLjQgMjRMMTcu
+        NCAyMEwxMS40IDI2WiIgZmlsbD0iIzQzNDc0RiIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="svgImageCollection1.check" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAPEEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjQwcHgiIGhl
+        aWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0i
+        NDAiIHJ4PSIxMiIgZmlsbD0iI0QwRTFGQiIgLz4NCiAgPHBhdGggZD0iTTE4LjYgMjQuNkwyNS42NSAx
+        Ny41NUwyNC4yNSAxNi4xNUwxOC42IDIxLjhMMTUuNzUgMTguOTVMMTQuMzUgMjAuMzVMMTguNiAyNC42
+        Wk0yMCAzMEMxOC42MTY3IDMwIDE3LjMxNjcgMjkuNzM3NSAxNi4xIDI5LjIxMjVDMTQuODgzMyAyOC42
+        ODc1IDEzLjgyNSAyNy45NzUgMTIuOTI1IDI3LjA3NUMxMi4wMjUgMjYuMTc1IDExLjMxMjUgMjUuMTE2
+        NyAxMC43ODc1IDIzLjlDMTAuMjYyNSAyMi42ODMzIDEwIDIxLjM4MzMgMTAgMjBDMTAgMTguNjE2NyAx
+        MC4yNjI1IDE3LjMxNjcgMTAuNzg3NSAxNi4xQzExLjMxMjUgMTQuODgzMyAxMi4wMjUgMTMuODI1IDEy
+        LjkyNSAxMi45MjVDMTMuODI1IDEyLjAyNSAxNC44ODMzIDExLjMxMjUgMTYuMSAxMC43ODc1QzE3LjMx
+        NjcgMTAuMjYyNSAxOC42MTY3IDEwIDIwIDEwQzIxLjM4MzMgMTAgMjIuNjgzMyAxMC4yNjI1IDIzLjkg
+        MTAuNzg3NUMyNS4xMTY3IDExLjMxMjUgMjYuMTc1IDEyLjAyNSAyNy4wNzUgMTIuOTI1QzI3Ljk3NSAx
+        My44MjUgMjguNjg3NSAxNC44ODMzIDI5LjIxMjUgMTYuMUMyOS43Mzc1IDE3LjMxNjcgMzAgMTguNjE2
+        NyAzMCAyMEMzMCAyMS4zODMzIDI5LjczNzUgMjIuNjgzMyAyOS4yMTI1IDIzLjlDMjguNjg3NSAyNS4x
+        MTY3IDI3Ljk3NSAyNi4xNzUgMjcuMDc1IDI3LjA3NUMyNi4xNzUgMjcuOTc1IDI1LjExNjcgMjguNjg3
+        NSAyMy45IDI5LjIxMjVDMjIuNjgzMyAyOS43Mzc1IDIxLjM4MzMgMzAgMjAgMzBaTTIwIDI4QzIyLjIz
+        MzMgMjggMjQuMTI1IDI3LjIyNSAyNS42NzUgMjUuNjc1QzI3LjIyNSAyNC4xMjUgMjggMjIuMjMzMyAy
+        OCAyMEMyOCAxNy43NjY3IDI3LjIyNSAxNS44NzUgMjUuNjc1IDE0LjMyNUMyNC4xMjUgMTIuNzc1IDIy
+        LjIzMzMgMTIgMjAgMTJDMTcuNzY2NyAxMiAxNS44NzUgMTIuNzc1IDE0LjMyNSAxNC4zMjVDMTIuNzc1
+        IDE1Ljg3NSAxMiAxNy43NjY3IDEyIDIwQzEyIDIyLjIzMzMgMTIuNzc1IDI0LjEyNSAxNC4zMjUgMjUu
+        Njc1QzE1Ljg3NSAyNy4yMjUgMTcuNzY2NyAyOCAyMCAyOFoiIGZpbGw9IiM1NDY0N0EiIC8+DQo8L3N2
+        Zz4L
+</value>
+  </data>
+  <data name="svgImageCollection1.timer" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAJ0DAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjQwcHgiIGhl
+        aWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0i
+        NDAiIHJ4PSIxMiIgZmlsbD0iI0ZGREFENiIgLz4NCiAgPHBhdGggZD0iTTE2IDI4SDI0VjI1QzI0IDIz
+        LjkgMjMuNjA4MyAyMi45NTgzIDIyLjgyNSAyMi4xNzVDMjIuMDQxNyAyMS4zOTE3IDIxLjEgMjEgMjAg
+        MjFDMTguOSAyMSAxNy45NTgzIDIxLjM5MTcgMTcuMTc1IDIyLjE3NUMxNi4zOTE3IDIyLjk1ODMgMTYg
+        MjMuOSAxNiAyNVYyOFpNMjAgMTlDMjEuMSAxOSAyMi4wNDE3IDE4LjYwODMgMjIuODI1IDE3LjgyNUMy
+        My42MDgzIDE3LjA0MTcgMjQgMTYuMSAyNCAxNVYxMkgxNlYxNUMxNiAxNi4xIDE2LjM5MTcgMTcuMDQx
+        NyAxNy4xNzUgMTcuODI1QzE3Ljk1ODMgMTguNjA4MyAxOC45IDE5IDIwIDE5Wk0xMiAzMFYyOEgxNFYy
+        NUMxNCAyMy45ODMzIDE0LjIzNzUgMjMuMDI5MiAxNC43MTI1IDIyLjEzNzVDMTUuMTg3NSAyMS4yNDU4
+        IDE1Ljg1IDIwLjUzMzMgMTYuNyAyMEMxNS44NSAxOS40NjY3IDE1LjE4NzUgMTguNzU0MiAxNC43MTI1
+        IDE3Ljg2MjVDMTQuMjM3NSAxNi45NzA4IDE0IDE2LjAxNjcgMTQgMTVWMTJIMTJWMTBIMjhWMTJIMjZW
+        MTVDMjYgMTYuMDE2NyAyNS43NjI1IDE2Ljk3MDggMjUuMjg3NSAxNy44NjI1QzI0LjgxMjUgMTguNzU0
+        MiAyNC4xNSAxOS40NjY3IDIzLjMgMjBDMjQuMTUgMjAuNTMzMyAyNC44MTI1IDIxLjI0NTggMjUuMjg3
+        NSAyMi4xMzc1QzI1Ljc2MjUgMjMuMDI5MiAyNiAyMy45ODMzIDI2IDI1VjI4SDI4VjMwSDEyWiIgZmls
+        bD0iIzkzMDAwQSIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="htmlContentControl2.HtmlTemplate.Styles" xml:space="preserve">
+    <value>.kpi-row { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;   /* Yatayda ortalar */
+    align-items: flex-start;   /* Dikeyde en üste (top) yaslar */
+    width: 100%; 
+    font-family: 'Segoe UI', sans-serif;    
+}
+.kpi-card { 
+    background-color: #FFFFFF; 
+    border: 1px solid #D1D5DB; 
+    border-radius: 4px; 
+    padding: 12px 16px;        /* 80px'e sığması için padding küçültüldü */
+    margin-right: 24px; 
+    height: 80px;              /* İSTEDİĞİN SABİT YÜKSEKLİK */
+    width: 100%;
+    flex-grow: 1;              /* Kartları eşit esnetir */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+.no-margin { 
+    margin-right: 0; 
+}
+.kpi-top { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.kpi-title { 
+    font-size: 14px; 
+    color: #4B5563; 
+    font-weight: 500;
+}
+.kpi-icon { 
+    width: 20px; 
+    height: 20px; 
+    opacity: 0.6; 
+}
+.kpi-val { 
+    font-size: 26px; 
+    font-weight: 700; 
+    color: #111827; 
+    line-height: 1; 
+}</value>
+  </data>
+  <data name="htmlContentControl2.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="kpi-row"&gt;
+    &lt;div class="kpi-card"&gt;
+        &lt;div class="kpi-top"&gt;
+            &lt;span class="kpi-title"&gt;Requires Approval&lt;/span&gt;
+            &lt;img src="timer" class="kpi-icon" alt="Bus" /&gt;
+        &lt;/div&gt;
+        &lt;div class="kpi-val"&gt;${Requires}&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="kpi-card"&gt;
+        &lt;div class="kpi-top"&gt;
+            &lt;span class="kpi-title"&gt;Approved Today&lt;/span&gt;
+            &lt;img src="check" class="kpi-icon" alt="Wrench" /&gt;
+        &lt;/div&gt;
+        &lt;div class="kpi-val"&gt;${Approved}&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="kpi-card no-margin"&gt;
+        &lt;div class="kpi-top"&gt;
+            &lt;span class="kpi-title"&gt;Total Capacity Utilization&lt;/span&gt;
+            &lt;img src="arrow" class="kpi-icon" alt="Driver" /&gt;
+        &lt;/div&gt;
+        &lt;div class="kpi-val"&gt;${Utilization}&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="htmlContentControl1.HtmlTemplate.Styles" xml:space="preserve">
+    <value>
+
+/* Tab Çizgisi ve Düzeni */
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto; /* Tabları hep en alta yaslar */
+    border-bottom: 1px solid #D1D5DB; /* Uzayan ince gri çizgi */
+}
+.tab {
+    padding: 0 0 16px 16px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #001937;
+    cursor: pointer;
+    border-bottom: 2px solid transparent; 
+}</value>
+  </data>
+  <data name="htmlContentControl1.HtmlTemplate.Template" xml:space="preserve">
+    <value>    &lt;div class="tabs-container"&gt;
+        &lt;div class="tab" id="pendingTab"&gt;Pending Action&lt;/div&gt;
+        &lt;div class="tab" id="approvedTab"&gt;Approved&lt;/div&gt;
+        &lt;div class="tab" id="rejectedTab"&gt;Rejected&lt;/div&gt;
+    &lt;/div&gt;</value>
+  </data>
+</root>

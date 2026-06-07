@@ -1,0 +1,379 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F7AA9EB-883B-4906-8F4D-F1C79F7A8090}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dashboard</RootNamespace>
+    <AssemblyName>Dashboard</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v24.1" />
+    <Reference Include="DevExpress.Charts.v24.1.Core, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v24.1" />
+    <Reference Include="DevExpress.Data.v24.1" />
+    <Reference Include="DevExpress.Utils.v24.1" />
+    <Reference Include="DevExpress.Sparkline.v24.1.Core" />
+    <Reference Include="DevExpress.Utils.v24.1.UI, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v24.1.UI, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v24.1.Wizard, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v24.1" />
+    <Reference Include="DevExpress.Printing.v24.1.Core" />
+    <Reference Include="DevExpress.Drawing.v24.1" />
+    <Reference Include="DevExpress.XtraGrid.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.8\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Pipelines, Version=10.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.10.0.8\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Json, Version=10.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Json.10.0.8\lib\net462\System.Net.Http.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=10.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.10.0.8\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=10.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.10.0.8\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Birlik.Shared\DTOs\AdminDTOs.cs">
+      <Link>Shared\DTOs\AdminDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\CityDTOs.cs">
+      <Link>Shared\DTOs\CityDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\CompanyDTOs.cs">
+      <Link>Shared\DTOs\CompanyDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\DriverDTOs.cs">
+      <Link>Shared\DTOs\DriverDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\Page\CompanyManagementPageDto.cs">
+      <Link>Shared\DTOs\Page\CompanyManagementPageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\Page\DriverManagementPageDto.cs">
+      <Link>Shared\DTOs\Page\DriverManagementPageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\Page\ReservationManagementPageDto.cs">
+      <Link>Shared\DTOs\Page\ReservationManagementPageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\Page\StopManagementPageDto.cs">
+      <Link>Shared\DTOs\Page\StopManagementPageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\Page\TripManagementPageDto.cs">
+      <Link>Shared\DTOs\Page\TripManagementPageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\Page\VehicleManagementPageDto.cs">
+      <Link>Shared\DTOs\Page\VehicleManagementPageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\PassengerDTOs.cs">
+      <Link>Shared\DTOs\PassengerDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\ReservationDTOs.cs">
+      <Link>Shared\DTOs\ReservationDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\RouteDTOs.cs">
+      <Link>Shared\DTOs\RouteDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\StopDTOs.cs">
+      <Link>Shared\DTOs\StopDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\TripDTOs.cs">
+      <Link>Shared\DTOs\TripDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\DTOs\VehicleDTOs.cs">
+      <Link>Shared\DTOs\VehicleDTOs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\Enums\PassengerStatus.cs">
+      <Link>Shared\Enums\PassengerStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\Enums\ReservationStatus.cs">
+      <Link>Shared\Enums\ReservationStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\Enums\TripDaySelection.cs">
+      <Link>Shared\Enums\TripDaySelection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Birlik.Shared\Enums\TripStatus.cs">
+      <Link>Shared\Enums\TripStatus.cs</Link>
+    </Compile>
+    <Compile Include="Company\Interfaces\ICompanyManagementService.cs" />
+    <Compile Include="Company\Services\CompanyManagementApiService.cs" />
+    <Compile Include="Company\UI\CompanyManagementViewHTML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Company\UI\CompanyManagementViewHTML.Designer.cs">
+      <DependentUpon>CompanyManagementViewHTML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers\Interfaces\IDriverManagementService.cs" />
+    <Compile Include="Drivers\Services\DriverManagementApiService.cs" />
+    <Compile Include="Drivers\UI\AddDriverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers\UI\AddDriverForm.Designer.cs">
+      <DependentUpon>AddDriverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers\UI\DriversManagementViewHTML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drivers\UI\DriversManagementViewHTML.Designer.cs">
+      <DependentUpon>DriversManagementViewHTML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Core\UserSession.cs" />
+    <Compile Include="Login\Interfaces\IAuthService.cs" />
+    <Compile Include="Login\Services\AuthApiService.cs" />
+    <Compile Include="Login\UI\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\UI\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservations\Interfaces\IReservationManagementService.cs" />
+    <Compile Include="Reservations\Services\ReservationManagementApiService.cs" />
+    <Compile Include="Reservations\UI\ReservationManagementViewHTML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reservations\UI\ReservationManagementViewHTML.Designer.cs">
+      <DependentUpon>ReservationManagementViewHTML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\Enums\DriverStatus.cs" />
+    <Compile Include="Shared\GlobalState.cs" />
+    <Compile Include="Shared\Http\ApiException.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\Constants\ApiEndpoints.cs" />
+    <Compile Include="Shared\Http\ApiClient.cs" />
+    <Compile Include="Shared\Interfaces\IRefreshable.cs" />
+    <Compile Include="Shared\UI\ComponentFactory\MyDataTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MyDataTable.Designer.cs">
+      <DependentUpon>MyDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MyPrimaryButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MyPrimaryButton.Designer.cs">
+      <DependentUpon>MyPrimaryButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MyHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MyHeader.Designer.cs">
+      <DependentUpon>MyHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MyInformationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MyInformationCard.Designer.cs">
+      <DependentUpon>MyInformationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MySecondaryButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\MySecondaryButton.Designer.cs">
+      <DependentUpon>MySecondaryButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UI\ComponentFactory\ThemeManager.cs" />
+    <Compile Include="Stops\Interfaces\IStopManagementService.cs" />
+    <Compile Include="Stops\Services\StopManagementApiService.cs" />
+    <Compile Include="Stops\UI\StopManagementViewHTML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stops\UI\StopManagementViewHTML.Designer.cs">
+      <DependentUpon>StopManagementViewHTML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trips\Interfaces\ITripManagementService.cs" />
+    <Compile Include="Trips\Services\TripManagementApiService.cs" />
+    <Compile Include="Trips\UI\AddTripForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trips\UI\AddTripForm.Designer.cs">
+      <DependentUpon>AddTripForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trips\UI\TripsManagementViewHTML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Trips\UI\TripsManagementViewHTML.Designer.cs">
+      <DependentUpon>TripsManagementViewHTML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\Interfaces\IVehicleManagementService.cs" />
+    <Compile Include="Vehicles\Services\VehicleManagementApiService.cs" />
+    <Compile Include="Vehicles\UI\VehiclesManagementViewHTML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicles\UI\VehiclesManagementViewHTML.Designer.cs">
+      <DependentUpon>VehiclesManagementViewHTML.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Company\UI\CompanyManagementViewHTML.resx">
+      <DependentUpon>CompanyManagementViewHTML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\UI\AddDriverForm.resx">
+      <DependentUpon>AddDriverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\UI\DriversManagementViewHTML.resx">
+      <DependentUpon>DriversManagementViewHTML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\UI\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reservations\UI\ReservationManagementViewHTML.resx">
+      <DependentUpon>ReservationManagementViewHTML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\UI\ComponentFactory\MyDataTable.resx">
+      <DependentUpon>MyDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\UI\ComponentFactory\MyPrimaryButton.resx">
+      <DependentUpon>MyPrimaryButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\UI\ComponentFactory\MyHeader.resx">
+      <DependentUpon>MyHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\UI\ComponentFactory\MyInformationCard.resx">
+      <DependentUpon>MyInformationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\UI\ComponentFactory\MySecondaryButton.resx">
+      <DependentUpon>MySecondaryButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stops\UI\StopManagementViewHTML.resx">
+      <DependentUpon>StopManagementViewHTML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trips\UI\AddTripForm.resx">
+      <DependentUpon>AddTripForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trips\UI\TripsManagementViewHTML.resx">
+      <DependentUpon>TripsManagementViewHTML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles\UI\VehiclesManagementViewHTML.resx">
+      <DependentUpon>VehiclesManagementViewHTML.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\..\..\..\Downloads\swagger.json">
+      <Link>OpenAPIs\swagger.json</Link>
+      <Namespace>Dashboard.Shared.ApiModels</Namespace>
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Company\Core\" />
+    <Folder Include="Reservations\Core\" />
+    <Folder Include="Trips\Core\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

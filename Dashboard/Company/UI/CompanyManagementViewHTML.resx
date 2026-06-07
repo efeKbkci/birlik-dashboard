@@ -1,0 +1,899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="svgImageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>471, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Data.v24.1" name="DevExpress.Data.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="svgImageCollection1.pencil" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAANcCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjEycHgiIGhl
+        aWdodD0iMTJweCIgdmlld0JveD0iMCAwIDEyIDEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cGF0aCBkPSJNMS4zMzMzMyAxMC42NjY3SDIuMjgzMzNMOC44
+        IDQuMTVMNy44NSAzLjJMMS4zMzMzMyA5LjcxNjY3VjEwLjY2NjdaTTAgMTJWOS4xNjY2N0w4LjggMC4z
+        ODMzMzNDOC45MzMzMyAwLjI2MTExMSA5LjA4MDU2IDAuMTY2NjY3IDkuMjQxNjcgMC4xQzkuNDAyNzgg
+        MC4wMzMzMzMzIDkuNTcyMjIgMCA5Ljc1IDBDOS45Mjc3OCAwIDEwLjEgMC4wMzMzMzMzIDEwLjI2Njcg
+        MC4xQzEwLjQzMzMgMC4xNjY2NjcgMTAuNTc3OCAwLjI2NjY2NyAxMC43IDAuNEwxMS42MTY3IDEuMzMz
+        MzNDMTEuNzUgMS40NTU1NiAxMS44NDcyIDEuNiAxMS45MDgzIDEuNzY2NjdDMTEuOTY5NCAxLjkzMzMz
+        IDEyIDIuMSAxMiAyLjI2NjY3QzEyIDIuNDQ0NDQgMTEuOTY5NCAyLjYxMzg5IDExLjkwODMgMi43NzVD
+        MTEuODQ3MiAyLjkzNjExIDExLjc1IDMuMDgzMzMgMTEuNjE2NyAzLjIxNjY3TDIuODMzMzMgMTJIMFpN
+        MTAuNjY2NyAyLjI2NjY3TDkuNzMzMzMgMS4zMzMzM0wxMC42NjY3IDIuMjY2NjdaTTguMzE2NjcgMy42
+        ODMzM0w3Ljg1IDMuMkw4LjggNC4xNUw4LjMxNjY3IDMuNjgzMzNaIiBmaWxsPSJ3aGl0ZSIgLz4NCjwv
+        c3ZnPgs=
+</value>
+  </data>
+  <data name="svgImageCollection1.location" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAACIFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjEwcHgiIGhl
+        aWdodD0iMTJweCIgdmlld0JveD0iMCAwIDEwIDEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cGF0aCBkPSJNNC42NjY2NyA1LjgzMzMzQzQuOTg3NSA1Ljgz
+        MzMzIDUuMjYyMTUgNS43MTkxIDUuNDkwNjIgNS40OTA2MkM1LjcxOTEgNS4yNjIxNSA1LjgzMzMzIDQu
+        OTg3NSA1LjgzMzMzIDQuNjY2NjdDNS44MzMzMyA0LjM0NTgzIDUuNzE5MSA0LjA3MTE4IDUuNDkwNjIg
+        My44NDI3MUM1LjI2MjE1IDMuNjE0MjQgNC45ODc1IDMuNSA0LjY2NjY3IDMuNUM0LjM0NTgzIDMuNSA0
+        LjA3MTE4IDMuNjE0MjQgMy44NDI3MSAzLjg0MjcxQzMuNjE0MjQgNC4wNzExOCAzLjUgNC4zNDU4MyAz
+        LjUgNC42NjY2N0MzLjUgNC45ODc1IDMuNjE0MjQgNS4yNjIxNSAzLjg0MjcxIDUuNDkwNjJDNC4wNzEx
+        OCA1LjcxOTEgNC4zNDU4MyA1LjgzMzMzIDQuNjY2NjcgNS44MzMzM1pNNC42NjY2NyAxMC4xMjA4QzUu
+        ODUyNzggOS4wMzE5NCA2LjczMjY0IDguMDQyNzEgNy4zMDYyNSA3LjE1MzEyQzcuODc5ODYgNi4yNjM1
+        NCA4LjE2NjY3IDUuNDczNjEgOC4xNjY2NyA0Ljc4MzMzQzguMTY2NjcgMy43MjM2MSA3LjgyODgyIDIu
+        ODU1OSA3LjE1MzEyIDIuMTgwMjFDNi40Nzc0MyAxLjUwNDUxIDUuNjQ4NjEgMS4xNjY2NyA0LjY2NjY3
+        IDEuMTY2NjdDMy42ODQ3MiAxLjE2NjY3IDIuODU1OSAxLjUwNDUxIDIuMTgwMjEgMi4xODAyMUMxLjUw
+        NDUxIDIuODU1OSAxLjE2NjY3IDMuNzIzNjEgMS4xNjY2NyA0Ljc4MzMzQzEuMTY2NjcgNS40NzM2MSAx
+        LjQ1MzQ3IDYuMjYzNTQgMi4wMjcwOCA3LjE1MzEyQzIuNjAwNjkgOC4wNDI3MSAzLjQ4MDU2IDkuMDMx
+        OTQgNC42NjY2NyAxMC4xMjA4Wk00LjY2NjY3IDExLjY2NjdDMy4xMDEzOSAxMC4zMzQ3IDEuOTMyMjkg
+        OS4wOTc1NyAxLjE1OTM3IDcuOTU1MjFDMC4zODY0NTggNi44MTI4NSAwIDUuNzU1NTYgMCA0Ljc4MzMz
+        QzAgMy4zMjUgMC40NjkwOTcgMi4xNjMxOSAxLjQwNzI5IDEuMjk3OTJDMi4zNDU0OSAwLjQzMjYzOSAz
+        LjQzMTk0IDAgNC42NjY2NyAwQzUuOTAxMzkgMCA2Ljk4Nzg1IDAuNDMyNjM5IDcuOTI2MDQgMS4yOTc5
+        MkM4Ljg2NDI0IDIuMTYzMTkgOS4zMzMzMyAzLjMyNSA5LjMzMzMzIDQuNzgzMzNDOS4zMzMzMyA1Ljc1
+        NTU2IDguOTQ2ODggNi44MTI4NSA4LjE3Mzk2IDcuOTU1MjFDNy40MDEwNCA5LjA5NzU3IDYuMjMxOTQg
+        MTAuMzM0NyA0LjY2NjY3IDExLjY2NjdaIiBmaWxsPSIjNDM0NzRGIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="svgImageCollection1.route" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAADcIAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjQwcHgiIGhl
+        aWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0i
+        NDAiIHJ4PSIxMiIgZmlsbD0iI0QwRTFGQiIgZmlsbC1vcGFjaXR5PSIwLjMiIC8+DQogIDxwYXRoIGQ9
+        Ik0xNyAyOUMxNS45IDI5IDE0Ljk1ODMgMjguNjA4MyAxNC4xNzUgMjcuODI1QzEzLjM5MTcgMjcuMDQx
+        NyAxMyAyNi4xIDEzIDI1VjE2LjgyNUMxMi40MTY3IDE2LjYwODMgMTEuOTM3NSAxNi4yNDU4IDExLjU2
+        MjUgMTUuNzM3NUMxMS4xODc1IDE1LjIyOTIgMTEgMTQuNjUgMTEgMTRDMTEgMTMuMTY2NyAxMS4yOTE3
+        IDEyLjQ1ODMgMTEuODc1IDExLjg3NUMxMi40NTgzIDExLjI5MTcgMTMuMTY2NyAxMSAxNCAxMUMxNC44
+        MzMzIDExIDE1LjU0MTcgMTEuMjkxNyAxNi4xMjUgMTEuODc1QzE2LjcwODMgMTIuNDU4MyAxNyAxMy4x
+        NjY3IDE3IDE0QzE3IDE0LjY1IDE2LjgxMjUgMTUuMjI5MiAxNi40Mzc1IDE1LjczNzVDMTYuMDYyNSAx
+        Ni4yNDU4IDE1LjU4MzMgMTYuNjA4MyAxNSAxNi44MjVWMjVDMTUgMjUuNTUgMTUuMTk1OCAyNi4wMjA4
+        IDE1LjU4NzUgMjYuNDEyNUMxNS45NzkyIDI2LjgwNDIgMTYuNDUgMjcgMTcgMjdDMTcuNTUgMjcgMTgu
+        MDIwOCAyNi44MDQyIDE4LjQxMjUgMjYuNDEyNUMxOC44MDQyIDI2LjAyMDggMTkgMjUuNTUgMTkgMjVW
+        MTVDMTkgMTMuOSAxOS4zOTE3IDEyLjk1ODMgMjAuMTc1IDEyLjE3NUMyMC45NTgzIDExLjM5MTcgMjEu
+        OSAxMSAyMyAxMUMyNC4xIDExIDI1LjA0MTcgMTEuMzkxNyAyNS44MjUgMTIuMTc1QzI2LjYwODMgMTIu
+        OTU4MyAyNyAxMy45IDI3IDE1VjIzLjE3NUMyNy41ODMzIDIzLjM5MTcgMjguMDYyNSAyMy43NTQyIDI4
+        LjQzNzUgMjQuMjYyNUMyOC44MTI1IDI0Ljc3MDggMjkgMjUuMzUgMjkgMjZDMjkgMjYuODMzMyAyOC43
+        MDgzIDI3LjU0MTcgMjguMTI1IDI4LjEyNUMyNy41NDE3IDI4LjcwODMgMjYuODMzMyAyOSAyNiAyOUMy
+        NS4xNjY3IDI5IDI0LjQ1ODMgMjguNzA4MyAyMy44NzUgMjguMTI1QzIzLjI5MTcgMjcuNTQxNyAyMyAy
+        Ni44MzMzIDIzIDI2QzIzIDI1LjM1IDIzLjE4NzUgMjQuNzY2NyAyMy41NjI1IDI0LjI1QzIzLjkzNzUg
+        MjMuNzMzMyAyNC40MTY3IDIzLjM3NSAyNSAyMy4xNzVWMTVDMjUgMTQuNDUgMjQuODA0MiAxMy45Nzky
+        IDI0LjQxMjUgMTMuNTg3NUMyNC4wMjA4IDEzLjE5NTggMjMuNTUgMTMgMjMgMTNDMjIuNDUgMTMgMjEu
+        OTc5MiAxMy4xOTU4IDIxLjU4NzUgMTMuNTg3NUMyMS4xOTU4IDEzLjk3OTIgMjEgMTQuNDUgMjEgMTVW
+        MjVDMjEgMjYuMSAyMC42MDgzIDI3LjA0MTcgMTkuODI1IDI3LjgyNUMxOS4wNDE3IDI4LjYwODMgMTgu
+        MSAyOSAxNyAyOVpNMTQgMTVDMTQuMjgzMyAxNSAxNC41MjA4IDE0LjkwNDIgMTQuNzEyNSAxNC43MTI1
+        QzE0LjkwNDIgMTQuNTIwOCAxNSAxNC4yODMzIDE1IDE0QzE1IDEzLjcxNjcgMTQuOTA0MiAxMy40Nzky
+        IDE0LjcxMjUgMTMuMjg3NUMxNC41MjA4IDEzLjA5NTggMTQuMjgzMyAxMyAxNCAxM0MxMy43MTY3IDEz
+        IDEzLjQ3OTIgMTMuMDk1OCAxMy4yODc1IDEzLjI4NzVDMTMuMDk1OCAxMy40NzkyIDEzIDEzLjcxNjcg
+        MTMgMTRDMTMgMTQuMjgzMyAxMy4wOTU4IDE0LjUyMDggMTMuMjg3NSAxNC43MTI1QzEzLjQ3OTIgMTQu
+        OTA0MiAxMy43MTY3IDE1IDE0IDE1Wk0yNiAyN0MyNi4yODMzIDI3IDI2LjUyMDggMjYuOTA0MiAyNi43
+        MTI1IDI2LjcxMjVDMjYuOTA0MiAyNi41MjA4IDI3IDI2LjI4MzMgMjcgMjZDMjcgMjUuNzE2NyAyNi45
+        MDQyIDI1LjQ3OTIgMjYuNzEyNSAyNS4yODc1QzI2LjUyMDggMjUuMDk1OCAyNi4yODMzIDI1IDI2IDI1
+        QzI1LjcxNjcgMjUgMjUuNDc5MiAyNS4wOTU4IDI1LjI4NzUgMjUuMjg3NUMyNS4wOTU4IDI1LjQ3OTIg
+        MjUgMjUuNzE2NyAyNSAyNkMyNSAyNi4yODMzIDI1LjA5NTggMjYuNTIwOCAyNS4yODc1IDI2LjcxMjVD
+        MjUuNDc5MiAyNi45MDQyIDI1LjcxNjcgMjcgMjYgMjdaIiBmaWxsPSIjNTQ2NDdBIiAvPg0KPC9zdmc+
+        Cw==
+</value>
+  </data>
+  <data name="svgImageCollection1.id" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHYGAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjQwcHgiIGhl
+        aWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0i
+        NDAiIHJ4PSIxMiIgZmlsbD0iIzAwMzE0OSIgZmlsbC1vcGFjaXR5PSIwLjEiIC8+DQogIDxwYXRoIGQ9
+        Ik0xMiAzMEMxMS40NSAzMCAxMC45NzkyIDI5LjgwNDIgMTAuNTg3NSAyOS40MTI1QzEwLjE5NTggMjku
+        MDIwOCAxMCAyOC41NSAxMCAyOFYxN0MxMCAxNi40NSAxMC4xOTU4IDE1Ljk3OTIgMTAuNTg3NSAxNS41
+        ODc1QzEwLjk3OTIgMTUuMTk1OCAxMS40NSAxNSAxMiAxNUgxN1YxMkMxNyAxMS40NSAxNy4xOTU4IDEw
+        Ljk3OTIgMTcuNTg3NSAxMC41ODc1QzE3Ljk3OTIgMTAuMTk1OCAxOC40NSAxMCAxOSAxMEgyMUMyMS41
+        NSAxMCAyMi4wMjA4IDEwLjE5NTggMjIuNDEyNSAxMC41ODc1QzIyLjgwNDIgMTAuOTc5MiAyMyAxMS40
+        NSAyMyAxMlYxNUgyOEMyOC41NSAxNSAyOS4wMjA4IDE1LjE5NTggMjkuNDEyNSAxNS41ODc1QzI5Ljgw
+        NDIgMTUuOTc5MiAzMCAxNi40NSAzMCAxN1YyOEMzMCAyOC41NSAyOS44MDQyIDI5LjAyMDggMjkuNDEy
+        NSAyOS40MTI1QzI5LjAyMDggMjkuODA0MiAyOC41NSAzMCAyOCAzMEgxMlpNMTIgMjhIMjhWMTdIMjND
+        MjMgMTcuNTUgMjIuODA0MiAxOC4wMjA4IDIyLjQxMjUgMTguNDEyNUMyMi4wMjA4IDE4LjgwNDIgMjEu
+        NTUgMTkgMjEgMTlIMTlDMTguNDUgMTkgMTcuOTc5MiAxOC44MDQyIDE3LjU4NzUgMTguNDEyNUMxNy4x
+        OTU4IDE4LjAyMDggMTcgMTcuNTUgMTcgMTdIMTJWMjhaTTE0IDI2SDIwVjI1LjU1QzIwIDI1LjI2Njcg
+        MTkuOTIwOCAyNS4wMDQyIDE5Ljc2MjUgMjQuNzYyNUMxOS42MDQyIDI0LjUyMDggMTkuMzgzMyAyNC4z
+        MzMzIDE5LjEgMjQuMkMxOC43NjY3IDI0LjA1IDE4LjQyOTIgMjMuOTM3NSAxOC4wODc1IDIzLjg2MjVD
+        MTcuNzQ1OCAyMy43ODc1IDE3LjM4MzMgMjMuNzUgMTcgMjMuNzVDMTYuNjE2NyAyMy43NSAxNi4yNTQy
+        IDIzLjc4NzUgMTUuOTEyNSAyMy44NjI1QzE1LjU3MDggMjMuOTM3NSAxNS4yMzMzIDI0LjA1IDE0Ljkg
+        MjQuMkMxNC42MTY3IDI0LjMzMzMgMTQuMzk1OCAyNC41MjA4IDE0LjIzNzUgMjQuNzYyNUMxNC4wNzky
+        IDI1LjAwNDIgMTQgMjUuMjY2NyAxNCAyNS41NVYyNlpNMjIgMjQuNUgyNlYyM0gyMlYyNC41Wk0xNyAy
+        M0MxNy40MTY3IDIzIDE3Ljc3MDggMjIuODU0MiAxOC4wNjI1IDIyLjU2MjVDMTguMzU0MiAyMi4yNzA4
+        IDE4LjUgMjEuOTE2NyAxOC41IDIxLjVDMTguNSAyMS4wODMzIDE4LjM1NDIgMjAuNzI5MiAxOC4wNjI1
+        IDIwLjQzNzVDMTcuNzcwOCAyMC4xNDU4IDE3LjQxNjcgMjAgMTcgMjBDMTYuNTgzMyAyMCAxNi4yMjky
+        IDIwLjE0NTggMTUuOTM3NSAyMC40Mzc1QzE1LjY0NTggMjAuNzI5MiAxNS41IDIxLjA4MzMgMTUuNSAy
+        MS41QzE1LjUgMjEuOTE2NyAxNS42NDU4IDIyLjI3MDggMTUuOTM3NSAyMi41NjI1QzE2LjIyOTIgMjIu
+        ODU0MiAxNi41ODMzIDIzIDE3IDIzWk0yMiAyMS41SDI2VjIwSDIyVjIxLjVaTTE5IDE3SDIxVjEySDE5
+        VjE3WiIgZmlsbD0iIzAwMzE0OSIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="svgImageCollection1.chart" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAGEBAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjE4cHgiIGhl
+        aWdodD0iMThweCIgdmlld0JveD0iMCAwIDE4IDE4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cGF0aCBkPSJNMCAxOFYxNkwyIDE0VjE4SDBaTTQgMThWMTJM
+        NiAxMFYxOEg0Wk04IDE4VjEwTDEwIDEyLjAyNVYxOEg4Wk0xMiAxOFYxMi4wMjVMMTQgMTAuMDI1VjE4
+        SDEyWk0xNiAxOFY4TDE4IDZWMThIMTZaTTAgMTIuODI1VjEwTDcgM0wxMSA3TDE4IDBWMi44MjVMMTEg
+        OS44MjVMNyA1LjgyNUwwIDEyLjgyNVoiIGZpbGw9IiM1MDVGNzYiIC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="svgImageCollection1.truck" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAANYFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjQwcHgiIGhl
+        aWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0i
+        NDAiIHJ4PSIxMiIgZmlsbD0iIzAwMkQ1QyIgZmlsbC1vcGFjaXR5PSIwLjEiIC8+DQogIDxwYXRoIGQ9
+        Ik0xNCAyOEMxMy4xNjY3IDI4IDEyLjQ1ODMgMjcuNzA4MyAxMS44NzUgMjcuMTI1QzExLjI5MTcgMjYu
+        NTQxNyAxMSAyNS44MzMzIDExIDI1SDlWMTRDOSAxMy40NSA5LjE5NTgzIDEyLjk3OTIgOS41ODc1IDEy
+        LjU4NzVDOS45NzkxNyAxMi4xOTU4IDEwLjQ1IDEyIDExIDEySDI1VjE2SDI4TDMxIDIwVjI1SDI5QzI5
+        IDI1LjgzMzMgMjguNzA4MyAyNi41NDE3IDI4LjEyNSAyNy4xMjVDMjcuNTQxNyAyNy43MDgzIDI2Ljgz
+        MzMgMjggMjYgMjhDMjUuMTY2NyAyOCAyNC40NTgzIDI3LjcwODMgMjMuODc1IDI3LjEyNUMyMy4yOTE3
+        IDI2LjU0MTcgMjMgMjUuODMzMyAyMyAyNUgxN0MxNyAyNS44MzMzIDE2LjcwODMgMjYuNTQxNyAxNi4x
+        MjUgMjcuMTI1QzE1LjU0MTcgMjcuNzA4MyAxNC44MzMzIDI4IDE0IDI4Wk0xNCAyNkMxNC4yODMzIDI2
+        IDE0LjUyMDggMjUuOTA0MiAxNC43MTI1IDI1LjcxMjVDMTQuOTA0MiAyNS41MjA4IDE1IDI1LjI4MzMg
+        MTUgMjVDMTUgMjQuNzE2NyAxNC45MDQyIDI0LjQ3OTIgMTQuNzEyNSAyNC4yODc1QzE0LjUyMDggMjQu
+        MDk1OCAxNC4yODMzIDI0IDE0IDI0QzEzLjcxNjcgMjQgMTMuNDc5MiAyNC4wOTU4IDEzLjI4NzUgMjQu
+        Mjg3NUMxMy4wOTU4IDI0LjQ3OTIgMTMgMjQuNzE2NyAxMyAyNUMxMyAyNS4yODMzIDEzLjA5NTggMjUu
+        NTIwOCAxMy4yODc1IDI1LjcxMjVDMTMuNDc5MiAyNS45MDQyIDEzLjcxNjcgMjYgMTQgMjZaTTExIDIz
+        SDExLjhDMTIuMDgzMyAyMi43IDEyLjQwODMgMjIuNDU4MyAxMi43NzUgMjIuMjc1QzEzLjE0MTcgMjIu
+        MDkxNyAxMy41NSAyMiAxNCAyMkMxNC40NSAyMiAxNC44NTgzIDIyLjA5MTcgMTUuMjI1IDIyLjI3NUMx
+        NS41OTE3IDIyLjQ1ODMgMTUuOTE2NyAyMi43IDE2LjIgMjNIMjNWMTRIMTFWMjNaTTI2IDI2QzI2LjI4
+        MzMgMjYgMjYuNTIwOCAyNS45MDQyIDI2LjcxMjUgMjUuNzEyNUMyNi45MDQyIDI1LjUyMDggMjcgMjUu
+        MjgzMyAyNyAyNUMyNyAyNC43MTY3IDI2LjkwNDIgMjQuNDc5MiAyNi43MTI1IDI0LjI4NzVDMjYuNTIw
+        OCAyNC4wOTU4IDI2LjI4MzMgMjQgMjYgMjRDMjUuNzE2NyAyNCAyNS40NzkyIDI0LjA5NTggMjUuMjg3
+        NSAyNC4yODc1QzI1LjA5NTggMjQuNDc5MiAyNSAyNC43MTY3IDI1IDI1QzI1IDI1LjI4MzMgMjUuMDk1
+        OCAyNS41MjA4IDI1LjI4NzUgMjUuNzEyNUMyNS40NzkyIDI1LjkwNDIgMjUuNzE2NyAyNiAyNiAyNlpN
+        MjUgMjFIMjkuMjVMMjcgMThIMjVWMjFaIiBmaWxsPSIjMDAyRDVDIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="svgImageCollection1.info" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAFAEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjIwcHgiIGhl
+        aWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cGF0aCBkPSJNOSAxNUgxMVY5SDlWMTVaTTEwIDdDMTAuMjgz
+        MyA3IDEwLjUyMDggNi45MDQxNyAxMC43MTI1IDYuNzEyNUMxMC45MDQyIDYuNTIwODMgMTEgNi4yODMz
+        MyAxMSA2QzExIDUuNzE2NjcgMTAuOTA0MiA1LjQ3OTE3IDEwLjcxMjUgNS4yODc1QzEwLjUyMDggNS4w
+        OTU4MyAxMC4yODMzIDUgMTAgNUM5LjcxNjY3IDUgOS40NzkxNyA1LjA5NTgzIDkuMjg3NSA1LjI4NzVD
+        OS4wOTU4MyA1LjQ3OTE3IDkgNS43MTY2NyA5IDZDOSA2LjI4MzMzIDkuMDk1ODMgNi41MjA4MyA5LjI4
+        NzUgNi43MTI1QzkuNDc5MTcgNi45MDQxNyA5LjcxNjY3IDcgMTAgN1pNMTAgMjBDOC42MTY2NyAyMCA3
+        LjMxNjY3IDE5LjczNzUgNi4xIDE5LjIxMjVDNC44ODMzMyAxOC42ODc1IDMuODI1IDE3Ljk3NSAyLjky
+        NSAxNy4wNzVDMi4wMjUgMTYuMTc1IDEuMzEyNSAxNS4xMTY3IDAuNzg3NSAxMy45QzAuMjYyNSAxMi42
+        ODMzIDAgMTEuMzgzMyAwIDEwQzAgOC42MTY2NyAwLjI2MjUgNy4zMTY2NyAwLjc4NzUgNi4xQzEuMzEy
+        NSA0Ljg4MzMzIDIuMDI1IDMuODI1IDIuOTI1IDIuOTI1QzMuODI1IDIuMDI1IDQuODgzMzMgMS4zMTI1
+        IDYuMSAwLjc4NzVDNy4zMTY2NyAwLjI2MjUgOC42MTY2NyAwIDEwIDBDMTEuMzgzMyAwIDEyLjY4MzMg
+        MC4yNjI1IDEzLjkgMC43ODc1QzE1LjExNjcgMS4zMTI1IDE2LjE3NSAyLjAyNSAxNy4wNzUgMi45MjVD
+        MTcuOTc1IDMuODI1IDE4LjY4NzUgNC44ODMzMyAxOS4yMTI1IDYuMUMxOS43Mzc1IDcuMzE2NjcgMjAg
+        OC42MTY2NyAyMCAxMEMyMCAxMS4zODMzIDE5LjczNzUgMTIuNjgzMyAxOS4yMTI1IDEzLjlDMTguNjg3
+        NSAxNS4xMTY3IDE3Ljk3NSAxNi4xNzUgMTcuMDc1IDE3LjA3NUMxNi4xNzUgMTcuOTc1IDE1LjExNjcg
+        MTguNjg3NSAxMy45IDE5LjIxMjVDMTIuNjgzMyAxOS43Mzc1IDExLjM4MzMgMjAgMTAgMjBaIiBmaWxs
+        PSIjMDAxOTM3IiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <metadata name="htmlTemplateCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="OverviewItemTemplate.Styles" xml:space="preserve">
+    <value>/* Her Bir Liste Elemanı (İçteki Çerçeveli Kutular) */
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px; /* Elemanlar arası dikey boşluk */
+    background-color: #FAFAFA; /* Çok hafif gri arka plan */
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.list-item:hover {
+    border-color: #9CA3AF; /* Üzerine gelince çerçeve belirginleşir */
+}
+
+/* Soldaki Renkli İkon Kutuları */
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px; /* Yazıyı sağa iter */
+}
+/* Arka plan renkleri (Tasarımda farklı renkler var) */
+.bg-blue { background-color: #E0F2FE; }
+.bg-gray { background-color: #F3F4F6; }
+.bg-light-blue { background-color: #EFF6FF; }
+
+.item-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Orta Metin Alanı (Yay Gibi Esneyen Kısım) */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* SİHİRLİ DOKUNUŞ: Kalan tüm boşluğu kaplar ve oku en sağa fırlatır! */
+}
+.item-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6B7280;
+    margin-bottom: 4px;
+}
+.item-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+}</value>
+  </data>
+  <data name="OverviewItemTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="list-item"&gt;
+    &lt;div class="icon-box ${ColorClass}"&gt;
+        &lt;img src="${IconName}" class="item-icon" /&gt;
+    &lt;/div&gt;
+    &lt;div class="text-box"&gt;
+        &lt;div class="item-label"&gt;${Title}&lt;/div&gt;
+        &lt;div class="item-value"&gt;${Value}&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="htmlContentControl4.HtmlTemplate.Styles" xml:space="preserve">
+    <value>/* Ana Kart Kasası */
+.overview-card {
+    background-color: #FFFFFF;
+    border: 2px solid #C3C6D0;;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Başlık */
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px; /* Altındaki liste ile arasındaki boşluk */
+}
+.header-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.header-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Alt Alta Dizilen Liste Taşıyıcısı */
+.list-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+/*OverviewItemTemplate*/
+
+/* Her Bir Liste Elemanı (İçteki Çerçeveli Kutular) */
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #C3C6D0;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 12px; /* Elemanlar arası dikey boşluk */
+    background-color: #F7F9FB; /* Çok hafif gri arka plan */
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.list-item:hover {
+    border-color: #9CA3AF; /* Üzerine gelince çerçeve belirginleşir */
+}
+
+/* Soldaki Renkli İkon Kutuları */
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px; /* Yazıyı sağa iter */
+    padding: 8px;
+}
+/* Arka plan renkleri (Tasarımda farklı renkler var) */
+.bg-blue { background-color: #E0F2FE; }
+.bg-gray { background-color: #F3F4F6; }
+.bg-light-blue { background-color: #EFF6FF; }
+
+.item-icon {
+    width: 100%;
+    height: 100%;
+}
+
+/* Orta Metin Alanı (Yay Gibi Esneyen Kısım) */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* SİHİRLİ DOKUNUŞ: Kalan tüm boşluğu kaplar ve oku en sağa fırlatır! */
+}
+.item-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6B7280;
+    margin-bottom: 4px;
+}
+.item-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+}</value>
+  </data>
+  <data name="htmlContentControl4.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="overview-card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;img src="chart" class="header-icon" alt="Chart" /&gt;
+        &lt;div class="header-title"&gt;Operational Overview&lt;/div&gt;
+    &lt;/div&gt;
+	
+	&lt;div class="list-container"&gt;
+		&lt;div class="list-item"&gt;
+		    &lt;div class="icon-box ${ColorClass}"&gt;
+		        &lt;img src="truck" class="item-icon" /&gt;
+		    &lt;/div&gt;
+		    &lt;div class="text-box"&gt;
+		        &lt;div class="item-label"&gt;Active Vehicles&lt;/div&gt;
+		        &lt;div class="item-value"&gt;${Vehicles}&lt;/div&gt;
+	    	&lt;/div&gt;
+		&lt;/div&gt;
+		
+			&lt;div class="list-item"&gt;
+			    &lt;div class="icon-box ${ColorClass}"&gt;
+			        &lt;img src="id" class="item-icon" /&gt;
+			    &lt;/div&gt;
+			    &lt;div class="text-box"&gt;
+			        &lt;div class="item-label"&gt;Total Drivers&lt;/div&gt;
+			        &lt;div class="item-value"&gt;${Drivers}&lt;/div&gt;
+		    	&lt;/div&gt;
+			&lt;/div&gt;
+		
+				&lt;div class="list-item"&gt;
+		    &lt;div class="icon-box ${ColorClass}"&gt;
+		        &lt;img src="route" class="item-icon" /&gt;
+		    &lt;/div&gt;
+		    &lt;div class="text-box"&gt;
+		        &lt;div class="item-label"&gt;Total Reservation&lt;/div&gt;
+		        &lt;div class="item-value"&gt;${Reservations}&lt;/div&gt;
+	    	&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--OverviewItemTemplate--&gt;</value>
+  </data>
+  <metadata name="htmlContentControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="editButton.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAANcCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjEycHgiIGhl
+        aWdodD0iMTJweCIgdmlld0JveD0iMCAwIDEyIDEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cGF0aCBkPSJNMS4zMzMzMyAxMC42NjY3SDIuMjgzMzNMOC44
+        IDQuMTVMNy44NSAzLjJMMS4zMzMzMyA5LjcxNjY3VjEwLjY2NjdaTTAgMTJWOS4xNjY2N0w4LjggMC4z
+        ODMzMzNDOC45MzMzMyAwLjI2MTExMSA5LjA4MDU2IDAuMTY2NjY3IDkuMjQxNjcgMC4xQzkuNDAyNzgg
+        MC4wMzMzMzMzIDkuNTcyMjIgMCA5Ljc1IDBDOS45Mjc3OCAwIDEwLjEgMC4wMzMzMzMzIDEwLjI2Njcg
+        MC4xQzEwLjQzMzMgMC4xNjY2NjcgMTAuNTc3OCAwLjI2NjY2NyAxMC43IDAuNEwxMS42MTY3IDEuMzMz
+        MzNDMTEuNzUgMS40NTU1NiAxMS44NDcyIDEuNiAxMS45MDgzIDEuNzY2NjdDMTEuOTY5NCAxLjkzMzMz
+        IDEyIDIuMSAxMiAyLjI2NjY3QzEyIDIuNDQ0NDQgMTEuOTY5NCAyLjYxMzg5IDExLjkwODMgMi43NzVD
+        MTEuODQ3MiAyLjkzNjExIDExLjc1IDMuMDgzMzMgMTEuNjE2NyAzLjIxNjY3TDIuODMzMzMgMTJIMFpN
+        MTAuNjY2NyAyLjI2NjY3TDkuNzMzMzMgMS4zMzMzM0wxMC42NjY3IDIuMjY2NjdaTTguMzE2NjcgMy42
+        ODMzM0w3Ljg1IDMuMkw4LjggNC4xNUw4LjMxNjY3IDMuNjgzMzNaIiBmaWxsPSJ3aGl0ZSIgLz4NCjwv
+        c3ZnPgs=
+</value>
+  </data>
+  <data name="htmlContentControl1.HtmlTemplate.Styles" xml:space="preserve">
+    <value>/* --- 1. ANA KASA --- */
+.profile-card {
+    background-color: #FFFFFF;
+    border: 2px solid #C3C6D0;;
+    border-radius: 8px;
+    overflow: hidden; /* SİHİR 1: Banner resminin üst köşelerden dışarı taşmasını keser, yuvarlatır */
+    display: flex;
+    flex-direction: column; /* Artık yan yana değil, alt alta diziyoruz */
+    font-family: 'Segoe UI', sans-serif;
+    height: 215px;
+}
+
+/* --- 2. BANNER RESMİ --- */
+.banner-img {
+    width: 100%;
+    height: 120px; /* Banner'ın yüksekliğini buradan ayarlayabilirsin */
+    object-fit: cover; /* Resmin sündürülmeden alanı doldurmasını sağlar */
+    display: block;
+}
+
+/* --- 3. ALT BEYAZ İÇERİK ALANI --- */
+.content-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding: 0 24px 20px 24px; /* Üstüne padding vermedik çünkü logoyu oraya çekeceğiz */
+}
+
+/* --- 4. TAŞAN LOGO OPERASYONU --- */
+.logo-wrapper {
+    margin-top: -40px; /* SİHİR 2: Logoyu yukarıya, banner'ın içine doğru çeker */
+    margin-right: 24px;
+}
+.logo-box {
+    background-color: #0F172A;
+    width: 80px;  /* Logoyu biraz daha heybetli yaptık */
+    height: 80px;
+    border-radius: 4px;
+    border: 4px solid #FFFFFF; /* SİHİR 3: Tasarımdaki o kesilmiş beyaz çerçeve hissi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-box img { width: 40px; height: 40px; }
+
+/* --- 5. BİLGİLER VE YAZILAR --- */
+.info-box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 12px; /* Logoyla dengeli durması için yazıları çok hafif aşağı iter */
+}
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111827;
+    white-space: nowrap;
+}
+.subtitle-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+    white-space: nowrap;
+}
+.location-icon { width: 16px; height: 16px; }
+.location {
+    color: #4B5563;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.badge-active {
+    background-color: #E5E7EB;
+    color: #111827;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+/* --- 6. BUTON VE HİZALAMA --- */
+.action-box {
+    margin-left: auto;
+    margin-top: 12px; /* Yazılarla aynı çizgide olması için */
+}
+.btn-edit {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F172A;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-edit:hover { background-color: #0F172A; }
+.btn-icon { width: 16px; height: 16px; margin-right: 8px; }</value>
+  </data>
+  <data name="htmlContentControl1.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="profile-card"&gt;
+    
+    &lt;img src="banner_image" class="banner-img" alt="Banner" /&gt;
+
+    &lt;div class="content-area"&gt;
+
+        &lt;div class="info-box"&gt;
+            &lt;div class="title-row"&gt;
+                &lt;span class="company-name"&gt;${CompanyName}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="subtitle-row"&gt;
+                &lt;img src="location" class="location-icon" alt="Location" /&gt;
+                &lt;span class="location"&gt; ${Location}&lt;/span&gt;
+                &lt;span class="badge-active"&gt;${Status}&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="action-box"&gt;
+            &lt;input class="btn-edit" name="editButton"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="htmlContentControl2.HtmlTemplate.Styles" xml:space="preserve">
+    <value>/* Ana Kart Kasası */
+.form-card {
+    background-color: #FFFFFF;
+    border: 2px solid #C3C6D0;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Başlık Alanı Hizalaması */
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* İkon ile yazı arası boşluk */
+}
+.header-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Ana Form Taşıyıcısı */
+.form-container {
+    padding: 16px 0 16px 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: transparent;
+}
+
+/* Genel Satır Yapısı */
+.form-row {
+    margin-bottom: 16px; /* Satırlar arası dikey mesafe */
+}
+
+/* Yan yana durması gereken Satır 1 için Flex düzeni */
+.split-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Elemanları saran genel kutu */
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Yan yana duran elemanların her birinin %50 kaplaması için */
+.half-width {
+    flex-grow: 1;
+    width: 50%;
+}
+
+/* Satır 1'deki iki kutunun arasına modern bir boşluk bırakır */
+.margin-right {
+    margin-right: 12px;
+}
+
+/* Üstteki küçük gri modern etiketler */
+.field-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #6b7280; /* Orta koyulukta gri */
+    margin-bottom: 6px; /* Etiket ile kutu arasındaki nefes payı */
+}
+
+/* TAŞMAYI ÖNLEYEN SİHİRLİ KUTU (Box-Sizing Alternatifi) */
+.input-container {
+    position: relative; /* İçindeki input'un buna göre gerilmesi için ŞART */
+    height: 38px; /* Kutunun sabit yüksekliği */
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db; /* İnce modern çerçeve */
+    border-radius: 6px; /* Hafif yuvarlak köşeler */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Kutunun üzerine gelindiğinde veya odaklanıldığında parlaması */
+.input-container:hover {
+    border-color: #3b82f6; /* Modern mavi renk */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* İÇERİYE GÖMÜLEN DEVERPRESS TEXTEDIT KONTROLLERİ */
+.modern-input {
+    position: absolute;
+    top: 6px;
+    left: 10px;  /* Sol iç boşluk (Padding hissi) */
+    right: 10px; /* Sağ iç boşluk (Padding hissi) */
+    
+    flex-grow: 1; /* Kutuda kalan tüm boşluğu kaplamasını sağlar */
+    width: 100%;
+    border: none; /* HTML tarafında da kenarlığı kapatıyoruz */
+    background-color: transparent; /* Şeffaf yapıyoruz ki dış kutunun rengi görünsün */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 14px;
+    color: #111827; /* Koyu antrasit yazı rengi */
+}
+
+/* Butonun Olduğu Alt Alan */
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* İçindeki butonu en sağa yaslar */
+    margin-top: auto; /* Muazzam Özellik: Form ne kadar kısa olursa olsun, butonu kartın en altına kilitler! */
+}
+
+/* Beyaz, Gri Çerçeveli Modern Buton */
+.btn-save {
+    background-color: #FFFFFF;
+    color: #374151;
+    border: 1px solid #D1D5DB;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.btn-save:hover {
+    background-color: #F9FAFB;
+    border-color: #9CA3AF;
+}</value>
+  </data>
+  <data name="htmlContentControl2.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="form-card"&gt;
+    
+    &lt;div class="card-header"&gt;
+        &lt;img src="info" class="header-icon" alt="Info" /&gt;
+        &lt;span class="header-title"&gt;Basic Information&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form-container"&gt;
+	    &lt;div class="form-row"&gt;
+	        &lt;div class="field-wrapper"&gt;
+	            &lt;span class="field-label"&gt;Name&lt;/span&gt;
+	            &lt;div class="input-container"&gt;
+	                &lt;input name="txtName" class="modern-input" /&gt;
+	            &lt;/div&gt;
+	        &lt;/div&gt;
+	    &lt;/div&gt;
+
+	    &lt;div class="form-row split-row"&gt;
+	        &lt;div class="field-wrapper half-width margin-right"&gt;
+	            &lt;span class="field-label"&gt;Phone Number&lt;/span&gt;
+	            &lt;div class="input-container"&gt;
+	                &lt;input name="txtPhoneNumber" class="modern-input" /&gt;
+	            &lt;/div&gt;
+	        &lt;/div&gt;
+	        
+	        &lt;div class="field-wrapper half-width"&gt;
+	            &lt;span class="field-label"&gt;Email&lt;/span&gt;
+	            &lt;div class="input-container"&gt;
+	                &lt;input name="txtEmail" class="modern-input" /&gt;
+	            &lt;/div&gt;
+	        &lt;/div&gt;
+	    &lt;/div&gt;
+
+    &lt;div class="form-row"&gt;
+        &lt;div class="field-wrapper"&gt;
+            &lt;span class="field-label"&gt;Address&lt;/span&gt;
+            &lt;div class="input-container"&gt;
+                &lt;input name="txtAddress" class="modern-input" /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+    &lt;div class="card-footer"&gt;
+        &lt;div class="btn-save"&gt;
+            &lt;input class="btn-edit" name="saveButton"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</value>
+  </data>
+  <metadata name="htmlTemplateCollection2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>244, 17</value>
+  </metadata>
+  <metadata name="ımageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>670, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="ımageCollection1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYyNC4xLCBWZXJzaW9uPTI0LjEu
+        NS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFFT
+        eXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRv
+        a2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAChEZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0
+        cmVhbWVyAgAAAAlJbWFnZVNpemUERGF0YQQHE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAAAgIAAAAF/P//
+        /xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAABAAAAAQAAAACQUAAAAP
+        BQAAAMgDAAACxAMAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnEAABJxAfPceo4AAANmSURBVDhPXc7rT9N3FMfx3x8xH6hjW9yTLXMkJkOGblSU
+        uugGhVIjt7a0tKWA4CyXtlxKEaZBccripgQdWpCLxTEcCIEFvKNuCEMuY2C4dEyBIhdN5pLt+14omCx7
+        cJKTc84rnyNd+1XQ2LtMx9g//PhY0DkuuDEpuDUluO0R3J0W3PtD8NMTQc+MoHdW0D8nGPQKhuYFUseo
+        oKV/keuvoEdw5/dV9GANPZwV9M0J+r2CgXnB8DPByDPBbwsC6eaEoK3fy12P4P70Gnq6mvSLV/DIKxh8
+        hRYEo4uCx0uC8SXBxLJAeuAR3B5ZoOeJoHdG0Lf24krS0P/RMj409VzgeS6YfiGQBqaW6B7x8mjmbwbn
+        BMPzq+/9N2lyWTCx8Bfj838y4X2BZ+ElE7PLTC++RHJdaqKu6T7N7T8zPDZJy80+2roH6Ho4SvfQFD1j
+        T6ltu0eas5z0ovNkHHVhL60lr/QSjtJqJOfFOr6p6yTdVsyFymrcV+9w7kwFsXoLgbJwAoLDCZAp2CpT
+        ELhD4ZtFJhZgdLgwO6uQLI4iHKdcnD5xCIs1C2dVM8dPllF5pYvLtY1YM+zsCpYRFPIp2+WRbAtVII/U
+        EBqu9pVUVH6Ds1Wd9N7qwJQQT8nX1TiLT/BFRS25Jac4Xf0D1d91Un6hkbSc43wcYWB7hIlg1QFCog8h
+        uRqvY7KXk2WxUll2hI7WDs5WddHsdtPQ0I67oYUa9zXO1bdy8ft2aq60U1LyFZ+npBEa8gmS/5Zt+L2x
+        CasxCptRRaQiCvnOUI5akzDqEsk+mMoRp5Mvj53Edb6K+ho3NfVNfFt3FfuZVqT16zewbt1r2E1KKo5l
+        8qbfRvw2bqCswMwH/u+gj95Dul6JWinHEBOGxRSN/UA8McrP+ChYjvTuptcJeO8tdmx5m91B/oRu3cye
+        oPdR7Qpkv/xD1HtlmJVyUlW7yYzbi02jwKaNJEsTxcFYBVJGXBiWuDCytRHYdUryDPvIN+zHYYrhcHIc
+        BaYYHKZ4CpLUFCZrKUrRUJyi5XCyBqdZjZSdsI9cYwxZ+jisBg1Wg5Y8s46cJB3OVAOFqYnkJ+vJMenI
+        TdL59vlmPXkrfaIGKc+oocCsozAl0QdWjnKMWnKNWmwGNbkmLTlGjQ+tlM2gJVMXT3JsNAkqFf8Cu+nF
+        oPssPPIAAAAASUVORK5CYIIL
+</value>
+  </data>
+</root>
