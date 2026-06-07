@@ -36,8 +36,6 @@
             this.vehicleTable = new DevExpress.XtraGrid.GridControl();
             this.dataTableView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.htmlContentControl3 = new DevExpress.XtraEditors.HtmlContentControl();
             this.htmlContentControl2 = new DevExpress.XtraEditors.HtmlContentControl();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
@@ -129,9 +127,7 @@
             this.dataTableView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.dataTableView.ColumnPanelRowHeight = 40;
             this.dataTableView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3});
+            this.gridColumn1});
             this.dataTableView.GridControl = this.vehicleTable;
             this.dataTableView.Name = "dataTableView";
             this.dataTableView.OptionsBehavior.Editable = false;
@@ -143,33 +139,13 @@
             // 
             // gridColumn1
             // 
-            this.gridColumn1.Caption = "Plate";
-            this.gridColumn1.FieldName = "plate";
+            this.gridColumn1.Caption = "Plate Number";
+            this.gridColumn1.FieldName = "PlateNumber";
             this.gridColumn1.MinWidth = 25;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
             this.gridColumn1.Width = 94;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Type / Model";
-            this.gridColumn2.FieldName = "type";
-            this.gridColumn2.MinWidth = 25;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 94;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Status";
-            this.gridColumn3.FieldName = "status";
-            this.gridColumn3.MinWidth = 25;
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 94;
             // 
             // htmlContentControl3
             // 
@@ -288,7 +264,5 @@
         private DevExpress.XtraGrid.GridControl vehicleTable;
         private DevExpress.XtraGrid.Views.Grid.GridView dataTableView;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
     }
 }

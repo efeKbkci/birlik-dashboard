@@ -54,7 +54,6 @@ namespace Dashboard.Vehicles.UI
 
                     // Grid ataması (Varsa)
                     vehicleTable.DataSource = pageData.Vehicles;
-                    dataTableView.PopulateColumns();
                 }
             }
             catch (ApiException ex)

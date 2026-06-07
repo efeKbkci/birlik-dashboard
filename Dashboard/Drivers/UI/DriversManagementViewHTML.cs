@@ -59,7 +59,6 @@ namespace Dashboard.Drivers.UI
 
                     // GridControl ataması devam ediyor...
                     tripTable.DataSource = pageData.Drivers;
-                    dataTableView.PopulateColumns();
                 }
             }
             catch (Exception ex)

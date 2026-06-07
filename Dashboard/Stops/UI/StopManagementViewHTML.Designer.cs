@@ -477,7 +477,7 @@
             this.stopId.AppearanceHeader.Options.UseTextOptions = true;
             this.stopId.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.stopId.Caption = "Stop ID";
-            this.stopId.FieldName = "stopId";
+            this.stopId.FieldName = "Id";
             this.stopId.MinWidth = 25;
             this.stopId.Name = "stopId";
             this.stopId.Visible = true;
@@ -486,8 +486,8 @@
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Name";
-            this.gridColumn2.FieldName = "name";
+            this.gridColumn2.Caption = "Address";
+            this.gridColumn2.FieldName = "Name";
             this.gridColumn2.MinWidth = 25;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -497,7 +497,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Status";
-            this.gridColumn3.FieldName = "status";
+            this.gridColumn3.FieldName = "Status";
             this.gridColumn3.MinWidth = 25;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;

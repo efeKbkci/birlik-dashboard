@@ -195,41 +195,41 @@
             // gridColumn1
             // 
             this.gridColumn1.Caption = "First Name";
-            this.gridColumn1.FieldName = "firstName";
+            this.gridColumn1.FieldName = "FirstName";
             this.gridColumn1.MinWidth = 25;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.VisibleIndex = 0;
             this.gridColumn1.Width = 94;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Last Name";
-            this.gridColumn2.FieldName = "lastName";
+            this.gridColumn2.FieldName = "LastName";
             this.gridColumn2.MinWidth = 25;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.VisibleIndex = 1;
             this.gridColumn2.Width = 94;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Phone Number";
-            this.gridColumn3.FieldName = "phoneNumber";
+            this.gridColumn3.FieldName = "PhoneNumber";
             this.gridColumn3.MinWidth = 25;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 3;
+            this.gridColumn3.VisibleIndex = 2;
             this.gridColumn3.Width = 94;
             // 
             // status
             // 
             this.status.Caption = "Status";
-            this.status.FieldName = "status";
+            this.status.FieldName = "Status";
             this.status.MinWidth = 25;
             this.status.Name = "status";
             this.status.Visible = true;
-            this.status.VisibleIndex = 0;
+            this.status.VisibleIndex = 3;
             this.status.Width = 94;
             // 
             // htmlContentControl3

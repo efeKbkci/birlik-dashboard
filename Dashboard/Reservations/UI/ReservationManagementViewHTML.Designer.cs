@@ -148,8 +148,8 @@
             this.bookingId.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.bookingId.AppearanceHeader.Options.UseTextOptions = true;
             this.bookingId.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.bookingId.Caption = "Booking ID";
-            this.bookingId.FieldName = "bookingId";
+            this.bookingId.Caption = "Reservation ID";
+            this.bookingId.FieldName = "Id";
             this.bookingId.MinWidth = 25;
             this.bookingId.Name = "bookingId";
             this.bookingId.Visible = true;
@@ -158,8 +158,8 @@
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Passenger";
-            this.gridColumn2.FieldName = "passenger";
+            this.gridColumn2.Caption = "Passenger Name";
+            this.gridColumn2.FieldName = "PassengerName";
             this.gridColumn2.MinWidth = 25;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -169,7 +169,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Route";
-            this.gridColumn3.FieldName = "route";
+            this.gridColumn3.FieldName = "RouteName";
             this.gridColumn3.MinWidth = 25;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
@@ -178,8 +178,8 @@
             // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "Date & Time";
-            this.gridColumn4.FieldName = "dateAndTime";
+            this.gridColumn4.Caption = "Date";
+            this.gridColumn4.FieldName = "TripDepartureTime";
             this.gridColumn4.MinWidth = 25;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -189,7 +189,7 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Status";
-            this.gridColumn5.FieldName = "status";
+            this.gridColumn5.FieldName = "ReservationStatus";
             this.gridColumn5.MinWidth = 25;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
@@ -199,7 +199,7 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "Actions";
-            this.gridColumn6.FieldName = "actions";
+            this.gridColumn6.FieldName = "Actions";
             this.gridColumn6.MinWidth = 25;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;

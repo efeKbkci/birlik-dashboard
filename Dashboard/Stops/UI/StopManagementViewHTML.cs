@@ -66,13 +66,6 @@ namespace Dashboard.Stops.UI
                     // Örnek: htmlContentControl benzeri bir kontrol yok ise label/text atamaları yapılmalı.
                     // Ancak grid kontrolümüz var, onu dolduralım.
                     stopTable.DataSource = pageData.Stops;
-                    dataTableView.PopulateColumns();
-
-                    if (dataTableView.Columns["Id"] != null) // Hata almamak için sütunun varlığını kontrol etmek iyi bir reflekstir
-                    {
-                        dataTableView.Columns["Id"].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-                        dataTableView.Columns["Id"].AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-                    }
                 }
             }
             catch (Exception ex)
