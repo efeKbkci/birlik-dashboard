@@ -231,7 +231,7 @@
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.EditValue = "14";
+            this.txtPhoneNumber.EditValue = "";
             this.txtPhoneNumber.Location = new System.Drawing.Point(18, 120);
             this.txtPhoneNumber.MaximumSize = new System.Drawing.Size(0, 40);
             this.txtPhoneNumber.MinimumSize = new System.Drawing.Size(0, 40);
@@ -246,7 +246,7 @@
             // 
             // txtLastName
             // 
-            this.txtLastName.EditValue = "10";
+            this.txtLastName.EditValue = "";
             this.txtLastName.Location = new System.Drawing.Point(312, 40);
             this.txtLastName.MaximumSize = new System.Drawing.Size(0, 40);
             this.txtLastName.MinimumSize = new System.Drawing.Size(0, 40);
@@ -261,7 +261,7 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.EditValue = "13";
+            this.txtFirstName.EditValue = "";
             this.txtFirstName.Location = new System.Drawing.Point(18, 40);
             this.txtFirstName.MaximumSize = new System.Drawing.Size(0, 40);
             this.txtFirstName.MinimumSize = new System.Drawing.Size(0, 40);
@@ -422,7 +422,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 564);
             this.Controls.Add(this.tablePanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "AddDriverForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddDriverForm";
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);

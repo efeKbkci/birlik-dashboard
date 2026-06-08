@@ -9,7 +9,7 @@ namespace Dashboard.Shared.Constants
     {
         // Docker       : 8080 
         // VisualStudio : 5000
-        public const string BaseUrl = "http://localhost:5000/";
+        public const string BaseUrl = "http://localhost:8080/";
 
         public static class Admins
         {

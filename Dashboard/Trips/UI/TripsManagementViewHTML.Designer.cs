@@ -261,6 +261,7 @@
             this.dataTableView.OptionsView.ShowIndicator = false;
             this.dataTableView.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.False;
             this.dataTableView.RowHeight = 40;
+            this.dataTableView.CustomColumnDisplayText += new DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventHandler(this.dataTableView_CustomColumnDisplayText);
             // 
             // tripId
             // 

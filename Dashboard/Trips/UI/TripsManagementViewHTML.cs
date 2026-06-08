@@ -90,5 +90,18 @@ namespace Dashboard.Trips.UI
                 XtraMessageBox.Show("Kullanıcı işlemi iptal etti veya pencereyi kapattı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        // UTC -> TR Zaman Dilimi Dönüşümü
+        private void dataTableView_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
+        {
+            if (e.Column.FieldName == "DepartureTime" && e.Value is DateTime utcDate)
+            {
+                DateTime kesinUtc = DateTime.SpecifyKind(utcDate, DateTimeKind.Utc);
+                TimeZoneInfo trZone = TimeZoneInfo.FindSystemTimeZoneById("Turkey Standard Time");
+                DateTime localDate = TimeZoneInfo.ConvertTimeFromUtc(kesinUtc, trZone);
+
+                e.DisplayText = localDate.ToString("dd.MM.yyyy HH:mm");
+            }
+        }
     }
 }

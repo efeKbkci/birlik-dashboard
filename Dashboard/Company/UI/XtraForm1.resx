@@ -117,21 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="DevExpress.Data.v24.1" name="DevExpress.Data.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="closeButton.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjEsIFZlcnNpb249MjQuMS41
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAPoBAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iQ2xlYXJIZWFkZXJBbmRGb290ZXIiIHN0eWxlPSJlbmFibGUtYmFja2dy
-        b3VuZDpuZXcgMCAwIDMyIDMyIj4NCiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5SZWR7ZmlsbDoj
-        RDExQzFDO30KPC9zdHlsZT4NCiAgPHBhdGggZD0iTTI3LDRINUM0LjUsNCw0LDQuNSw0LDV2MjJjMCww
-        LjUsMC41LDEsMSwxaDIyYzAuNSwwLDEtMC41LDEtMVY1QzI4LDQuNSwyNy41LDQsMjcsNHogTTIyLDIw
-        bC0yLDJsLTQtNGwtNCw0ICBsLTItMmw0LTRsLTQtNGwyLTJsNCw0bDQtNGwyLDJsLTQsNEwyMiwyMHoi
-        IGNsYXNzPSJSZWQiIC8+DQo8L3N2Zz4L
+  <data name="htmlContentControl1.HtmlTemplate.Styles" xml:space="preserve">
+    <value>.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Ana çerçeve: Dış çizgiler, yuvarlak köşeler ve arka plan */
+.modern-kutu {
+    display: flex;
+    align-items: center; /* İkon ve yazıyı dikeyde ortalar */
+    background-color: #ffffff; /* Kutunun iç rengi */
+    border: 2px solid #C3C6D0; /* İnce, zarif gri bir çerçeve */
+    border-radius: 4px; /* Modern yuvarlak köşeler */
+    padding: 0 12px; /* İçeriden sağ-sol boşlukları */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animasyon geçişi */
+}
+
+/* Fare ile üzerine gelindiğinde (Hover) veya tıklandığında yanacak efekt */
+.modern-kutu:hover {
+    border-color: #3b82f6; /* Mavi çerçeve */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* Dışarı doğru hafif mavi parlama */
+}
+
+/* İçine gömdüğümüz gerçek TextEdit'in yerleşim kuralları */
+.gizli-input {
+    flex-grow: 1; /* Kutuda kalan tüm boşluğu kaplamasını sağlar */
+    border: none; /* HTML tarafında da kenarlığı kapatıyoruz */
+    background-color: transparent; /* Şeffaf yapıyoruz ki dış kutunun rengi görünsün */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 14px;
+    color: #111827; /* Koyu antrasit yazı rengi */
+}</value>
+  </data>
+  <data name="htmlContentControl1.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="container"&gt;
+	&lt;div class="modern-kutu"&gt;
+    	&lt;input name="txtEmail" class="gizli-input" /&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="modern-kutu"&gt;
+	     &lt;input name="txtNumber" class="gizli-input" /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 </value>
   </data>
 </root>
