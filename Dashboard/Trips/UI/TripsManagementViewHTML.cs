@@ -1,4 +1,6 @@
-﻿using Dashboard.Shared;
+﻿using Birlik.Shared.DTOs.Page;
+using Birlik.Shared.Enums;
+using Dashboard.Shared;
 using Dashboard.Shared.Interfaces;
 using Dashboard.Trips.Services;
 using DevExpress.XtraEditors;
@@ -22,6 +24,14 @@ namespace Dashboard.Trips.UI
         public TripsManagementViewHTML()
         {
             InitializeComponent();
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            // Arayüzde oluşturduğumuz editörün içini dinamik olarak Enum ile doldur
+            repositoryItemImageComboBox1.Items.AddEnum(typeof(TripStatus));
         }
 
         public async Task RefreshDataAsync()
@@ -101,6 +111,22 @@ namespace Dashboard.Trips.UI
                 DateTime localDate = TimeZoneInfo.ConvertTimeFromUtc(kesinUtc, trZone);
 
                 e.DisplayText = localDate.ToString("dd.MM.yyyy HH:mm");
+            }
+        }
+
+        private async void dataTableView_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            if (e.Column.FieldName == "Status")
+            {
+                // Arka plandaki Value "1" veya "4" gibi bir sayıdır, onu Enum'a dönüştürüyoruz
+                TripStatus newStatus = (TripStatus)e.Value;
+
+                var changedRow = dataTableView.GetRow(e.RowHandle) as TripListDto;
+
+                if (changedRow != null)
+                {
+                    await _tripService.UpdateTripStatusAsync(changedRow.Id, newStatus);
+                }
             }
         }
     }

@@ -47,6 +47,8 @@
             this.vehicle = new DevExpress.XtraGrid.Columns.GridColumn();
             this.driver = new DevExpress.XtraGrid.Columns.GridColumn();
             this.status = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemImageComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.htmlContentControl3 = new DevExpress.XtraEditors.HtmlContentControl();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -59,6 +61,8 @@
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tripTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -223,6 +227,9 @@
             this.tripTable.MainView = this.dataTableView;
             this.tripTable.Margin = new System.Windows.Forms.Padding(0);
             this.tripTable.Name = "tripTable";
+            this.tripTable.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemComboBox1,
+            this.repositoryItemImageComboBox1});
             this.tripTable.Size = new System.Drawing.Size(1036, 368);
             this.tripTable.TabIndex = 6;
             this.tripTable.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -255,12 +262,12 @@
             this.status});
             this.dataTableView.GridControl = this.tripTable;
             this.dataTableView.Name = "dataTableView";
-            this.dataTableView.OptionsBehavior.Editable = false;
             this.dataTableView.OptionsView.ShowGroupPanel = false;
             this.dataTableView.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.True;
             this.dataTableView.OptionsView.ShowIndicator = false;
             this.dataTableView.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.False;
             this.dataTableView.RowHeight = 40;
+            this.dataTableView.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.dataTableView_CellValueChanged);
             this.dataTableView.CustomColumnDisplayText += new DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventHandler(this.dataTableView_CustomColumnDisplayText);
             // 
             // tripId
@@ -273,6 +280,7 @@
             this.tripId.FieldName = "Id";
             this.tripId.MinWidth = 25;
             this.tripId.Name = "tripId";
+            this.tripId.OptionsColumn.AllowEdit = false;
             this.tripId.Visible = true;
             this.tripId.VisibleIndex = 0;
             this.tripId.Width = 94;
@@ -283,6 +291,7 @@
             this.route.FieldName = "RouteName";
             this.route.MinWidth = 25;
             this.route.Name = "route";
+            this.route.OptionsColumn.AllowEdit = false;
             this.route.Visible = true;
             this.route.VisibleIndex = 1;
             this.route.Width = 94;
@@ -293,6 +302,7 @@
             this.departure.FieldName = "DepartureTime";
             this.departure.MinWidth = 25;
             this.departure.Name = "departure";
+            this.departure.OptionsColumn.AllowEdit = false;
             this.departure.Visible = true;
             this.departure.VisibleIndex = 2;
             this.departure.Width = 94;
@@ -303,6 +313,7 @@
             this.vehicle.FieldName = "VehiclePlate";
             this.vehicle.MinWidth = 25;
             this.vehicle.Name = "vehicle";
+            this.vehicle.OptionsColumn.AllowEdit = false;
             this.vehicle.Visible = true;
             this.vehicle.VisibleIndex = 3;
             this.vehicle.Width = 94;
@@ -313,6 +324,7 @@
             this.driver.FieldName = "DriverName";
             this.driver.MinWidth = 25;
             this.driver.Name = "driver";
+            this.driver.OptionsColumn.AllowEdit = false;
             this.driver.Visible = true;
             this.driver.VisibleIndex = 4;
             this.driver.Width = 94;
@@ -320,12 +332,27 @@
             // status
             // 
             this.status.Caption = "Status";
+            this.status.ColumnEdit = this.repositoryItemImageComboBox1;
             this.status.FieldName = "Status";
             this.status.MinWidth = 25;
             this.status.Name = "status";
             this.status.Visible = true;
             this.status.VisibleIndex = 5;
             this.status.Width = 94;
+            // 
+            // repositoryItemImageComboBox1
+            // 
+            this.repositoryItemImageComboBox1.AutoHeight = false;
+            this.repositoryItemImageComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemImageComboBox1.Name = "repositoryItemImageComboBox1";
+            // 
+            // repositoryItemComboBox1
+            // 
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
             // htmlContentControl3
             // 
@@ -361,6 +388,8 @@
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tripTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl3)).EndInit();
             this.ResumeLayout(false);
 
@@ -386,5 +415,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn vehicle;
         private DevExpress.XtraGrid.Columns.GridColumn driver;
         private DevExpress.XtraGrid.Columns.GridColumn status;
+        private DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox repositoryItemImageComboBox1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
     }
 }

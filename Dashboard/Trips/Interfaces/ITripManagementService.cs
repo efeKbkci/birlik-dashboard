@@ -1,5 +1,6 @@
 ﻿using Birlik.Shared.DTOs;
 using Birlik.Shared.DTOs.Page;
+using Birlik.Shared.Enums;
 using Dashboard.Shared.Http;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace Dashboard.Trips.Services
     public interface ITripManagementService
     {
         Task<TripManagementPageDto> GetPageDataAsync(int companyId);
-        Task CreateTrip(TripCreateDto dto);
+        Task CreateTripAsync(TripCreateDto dto);
+        Task UpdateTripStatusAsync(int tripId, TripStatus tripStatus);
     }
 }

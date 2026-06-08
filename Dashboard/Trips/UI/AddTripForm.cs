@@ -2,6 +2,7 @@
 using Birlik.Shared.Enums;
 using Dashboard.Shared;
 using Dashboard.Trips.Services;
+using DevExpress.XtraCharts.Design;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using System;
@@ -29,6 +30,11 @@ namespace Dashboard.Trips.UI
             comboboxTripStatus.SelectedIndex = 0;
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+        }
+
         private async void CreateButtonClicked(object sender, EventArgs e)
         {
             // 2. DTO Hazırla
@@ -49,7 +55,7 @@ namespace Dashboard.Trips.UI
             try
             {
                 var service = new TripManagementApiService();
-                await service.CreateTrip(newTrip);
+                await service.CreateTripAsync(newTrip);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }

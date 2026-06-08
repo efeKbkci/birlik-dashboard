@@ -250,7 +250,7 @@
             this.panelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl1.Name = "panelControl1";
             this.tablePanel1.SetRow(this.panelControl1, 1);
-            this.panelControl1.Size = new System.Drawing.Size(598, 406);
+            this.panelControl1.Size = new System.Drawing.Size(598, 390);
             this.panelControl1.TabIndex = 4;
             // 
             // layoutControl2
@@ -269,7 +269,7 @@
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1037, 212, 812, 500);
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(594, 402);
+            this.layoutControl2.Size = new System.Drawing.Size(594, 386);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -337,7 +337,12 @@
             this.dateEditDeparture.Properties.CalendarTimeEditing = DevExpress.Utils.DefaultBoolean.True;
             this.dateEditDeparture.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEditDeparture.Properties.CalendarTimeProperties.UseMaskAsDisplayFormat = true;
+            this.dateEditDeparture.Properties.DisplayFormat.FormatString = "g";
+            this.dateEditDeparture.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dateEditDeparture.Properties.MaskSettings.Set("mask", "g");
+            this.dateEditDeparture.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
+            this.dateEditDeparture.Properties.UseMaskAsDisplayFormat = true;
             this.dateEditDeparture.Size = new System.Drawing.Size(262, 40);
             this.dateEditDeparture.StyleController = this.layoutControl2;
             this.dateEditDeparture.TabIndex = 8;
@@ -421,7 +426,7 @@
             this.layoutControlItem10});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(16, 16, 16, 16);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(594, 402);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(594, 386);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem4
@@ -552,7 +557,7 @@
             this.layoutControlItem9.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem9.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem9.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 16, 2, 16);
-            this.layoutControlItem9.Size = new System.Drawing.Size(280, 130);
+            this.layoutControlItem9.Size = new System.Drawing.Size(280, 114);
             this.layoutControlItem9.Text = "Capacity";
             this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(127, 18);
@@ -571,7 +576,7 @@
             this.layoutControlItem10.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem10.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem10.Padding = new DevExpress.XtraLayout.Utils.Padding(16, 2, 2, 16);
-            this.layoutControlItem10.Size = new System.Drawing.Size(282, 130);
+            this.layoutControlItem10.Size = new System.Drawing.Size(282, 114);
             this.layoutControlItem10.Text = "Passenger Numbers";
             this.layoutControlItem10.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem10.TextSize = new System.Drawing.Size(127, 18);
@@ -583,7 +588,9 @@
             this.flowLayoutPanel1.Controls.Add(this.discardButton);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 490);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 0, 16, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 16, 16, 0);
+            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(0, 50);
+            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(0, 50);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.tablePanel1.SetRow(this.flowLayoutPanel1, 2);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(582, 50);

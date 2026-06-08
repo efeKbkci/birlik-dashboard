@@ -19,7 +19,7 @@ namespace Dashboard.Drivers.Services
 
         public async Task CreateDriver(DriverCreateDto dto)
         {
-            string endpoint = ApiEndpoints.Drivers.CreateAsync();
+            string endpoint = ApiEndpoints.Drivers.Create();
             await _apiClient.PostAsync<DriverCreateDto, DetailedDriverReadDto>(endpoint, dto);
         }
     }
