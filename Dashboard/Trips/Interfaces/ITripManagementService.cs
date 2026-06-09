@@ -13,7 +13,7 @@ namespace Dashboard.Trips.Services
     public interface ITripManagementService
     {
         Task<TripManagementPageDto> GetPageDataAsync(int companyId);
-        Task CreateTripAsync(TripCreateDto dto);
+        Task CreateTripAsync(string departureCity, string arrivalCity, TripCreateDto dto);
         Task UpdateTripStatusAsync(int tripId, TripStatus tripStatus);
     }
 }

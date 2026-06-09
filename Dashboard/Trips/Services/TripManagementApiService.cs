@@ -21,10 +21,14 @@ namespace Dashboard.Trips.Services
             return await _apiClient.GetAsync<TripManagementPageDto>(endpoint);
         }
 
-        public async Task CreateTripAsync(TripCreateDto dto)
+        public async Task CreateTripAsync(string departureCity, string arrivalCity, TripCreateDto dto)
         {
-            string endpoint = ApiEndpoints.Trips.Create();
-            await _apiClient.PostAsync<TripCreateDto, DetailedTripReadDashboardDto>(endpoint, dto);
+            string routeGetEndpoint = ApiEndpoints.Routes.GetByCityName(departureCity, arrivalCity);
+            var routeDto = await _apiClient.GetAsync<RouteReadDto>(routeGetEndpoint);
+            dto.RouteId = routeDto.Id;
+
+            string tripCreateEndpoint = ApiEndpoints.Trips.Create();
+            await _apiClient.PostAsync<TripCreateDto, DetailedTripReadDashboardDto>(tripCreateEndpoint, dto);
         }
 
         public async Task UpdateTripStatusAsync(int tripId, TripStatus tripStatus)

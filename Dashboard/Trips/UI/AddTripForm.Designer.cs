@@ -43,12 +43,12 @@
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             this.txtPassengerNumber = new DevExpress.XtraEditors.TextEdit();
             this.txtCapacity = new DevExpress.XtraEditors.TextEdit();
-            this.txtPrice = new DevExpress.XtraEditors.TextEdit();
+            this.txtVehicleID = new DevExpress.XtraEditors.TextEdit();
             this.dateEditDeparture = new DevExpress.XtraEditors.DateEdit();
             this.comboboxTripStatus = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtDriverID = new DevExpress.XtraEditors.TextEdit();
-            this.txtVehicleID = new DevExpress.XtraEditors.TextEdit();
-            this.txtRouteID = new DevExpress.XtraEditors.TextEdit();
+            this.txtArrivalCity = new DevExpress.XtraEditors.TextEdit();
+            this.txtDepartureCity = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -59,6 +59,8 @@
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.txtPrice = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -73,13 +75,13 @@
             this.layoutControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassengerNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCapacity.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVehicleID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditDeparture.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditDeparture.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboboxTripStatus.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDriverID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVehicleID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRouteID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtArrivalCity.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDepartureCity.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
@@ -90,6 +92,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             this.SuspendLayout();
             // 
             // discardButton
@@ -101,7 +105,7 @@
             this.discardButton.Appearance.Options.UseBackColor = true;
             this.discardButton.Appearance.Options.UseFont = true;
             this.discardButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.discardButton.Location = new System.Drawing.Point(226, 0);
+            this.discardButton.Location = new System.Drawing.Point(276, 0);
             this.discardButton.LookAndFeel.SkinMaskColor = System.Drawing.Color.Fuchsia;
             this.discardButton.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.Lime;
             this.discardButton.LookAndFeel.SkinName = "WXI";
@@ -122,7 +126,7 @@
             this.createButton.Appearance.Options.UseBackColor = true;
             this.createButton.Appearance.Options.UseFont = true;
             this.createButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.createButton.Location = new System.Drawing.Point(412, 0);
+            this.createButton.Location = new System.Drawing.Point(462, 0);
             this.createButton.Margin = new System.Windows.Forms.Padding(16, 0, 0, 0);
             this.createButton.MinimumSize = new System.Drawing.Size(170, 50);
             this.createButton.Name = "createButton";
@@ -149,7 +153,7 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 60F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.AutoSize, 26F)});
-            this.tablePanel1.Size = new System.Drawing.Size(598, 564);
+            this.tablePanel1.Size = new System.Drawing.Size(648, 614);
             this.tablePanel1.TabIndex = 2;
             // 
             // layoutControl1
@@ -163,7 +167,7 @@
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1039, 0, 812, 500);
             this.layoutControl1.Root = this.Root;
             this.tablePanel1.SetRow(this.layoutControl1, 0);
-            this.layoutControl1.Size = new System.Drawing.Size(598, 60);
+            this.layoutControl1.Size = new System.Drawing.Size(648, 60);
             this.layoutControl1.TabIndex = 5;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -183,7 +187,7 @@
             this.closeButton.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.closeButton.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("closeButton.ImageOptions.SvgImage")));
             this.closeButton.ImageOptions.SvgImageSize = new System.Drawing.Size(24, 24);
-            this.closeButton.Location = new System.Drawing.Point(556, 0);
+            this.closeButton.Location = new System.Drawing.Point(602, 0);
             this.closeButton.MaximumSize = new System.Drawing.Size(30, 30);
             this.closeButton.MinimumSize = new System.Drawing.Size(30, 30);
             this.closeButton.Name = "closeButton";
@@ -203,19 +207,19 @@
             this.emptySpaceItem1});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(16, 16, 0, 0);
-            this.Root.Size = new System.Drawing.Size(598, 60);
+            this.Root.Size = new System.Drawing.Size(648, 60);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.layoutControlItem1.Control = this.closeButton;
-            this.layoutControlItem1.Location = new System.Drawing.Point(540, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(586, 0);
             this.layoutControlItem1.MaxSize = new System.Drawing.Size(87, 30);
             this.layoutControlItem1.MinSize = new System.Drawing.Size(10, 10);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem1.Size = new System.Drawing.Size(26, 60);
+            this.layoutControlItem1.Size = new System.Drawing.Size(30, 60);
             this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -237,7 +241,7 @@
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(200, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(340, 60);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(386, 60);
             this.emptySpaceItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.SupportHorzAlignment;
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -250,33 +254,34 @@
             this.panelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl1.Name = "panelControl1";
             this.tablePanel1.SetRow(this.panelControl1, 1);
-            this.panelControl1.Size = new System.Drawing.Size(598, 390);
+            this.panelControl1.Size = new System.Drawing.Size(648, 440);
             this.panelControl1.TabIndex = 4;
             // 
             // layoutControl2
             // 
+            this.layoutControl2.Controls.Add(this.txtPrice);
             this.layoutControl2.Controls.Add(this.txtPassengerNumber);
             this.layoutControl2.Controls.Add(this.txtCapacity);
-            this.layoutControl2.Controls.Add(this.txtPrice);
+            this.layoutControl2.Controls.Add(this.txtVehicleID);
             this.layoutControl2.Controls.Add(this.dateEditDeparture);
             this.layoutControl2.Controls.Add(this.comboboxTripStatus);
             this.layoutControl2.Controls.Add(this.txtDriverID);
-            this.layoutControl2.Controls.Add(this.txtVehicleID);
-            this.layoutControl2.Controls.Add(this.txtRouteID);
+            this.layoutControl2.Controls.Add(this.txtArrivalCity);
+            this.layoutControl2.Controls.Add(this.txtDepartureCity);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl2.Location = new System.Drawing.Point(2, 2);
             this.layoutControl2.Margin = new System.Windows.Forms.Padding(0);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1037, 212, 812, 500);
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(594, 386);
+            this.layoutControl2.Size = new System.Drawing.Size(644, 436);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
             // txtPassengerNumber
             // 
             this.txtPassengerNumber.EditValue = "5";
-            this.txtPassengerNumber.Location = new System.Drawing.Point(312, 280);
+            this.txtPassengerNumber.Location = new System.Drawing.Point(337, 280);
             this.txtPassengerNumber.MaximumSize = new System.Drawing.Size(0, 40);
             this.txtPassengerNumber.MinimumSize = new System.Drawing.Size(0, 40);
             this.txtPassengerNumber.Name = "txtPassengerNumber";
@@ -285,7 +290,7 @@
             this.txtPassengerNumber.Properties.Appearance.Options.UseFont = true;
             this.txtPassengerNumber.Properties.Appearance.Options.UseForeColor = true;
             this.txtPassengerNumber.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtPassengerNumber.Size = new System.Drawing.Size(264, 40);
+            this.txtPassengerNumber.Size = new System.Drawing.Size(289, 40);
             this.txtPassengerNumber.StyleController = this.layoutControl2;
             this.txtPassengerNumber.TabIndex = 11;
             // 
@@ -301,25 +306,25 @@
             this.txtCapacity.Properties.Appearance.Options.UseFont = true;
             this.txtCapacity.Properties.Appearance.Options.UseForeColor = true;
             this.txtCapacity.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtCapacity.Size = new System.Drawing.Size(262, 40);
+            this.txtCapacity.Size = new System.Drawing.Size(287, 40);
             this.txtCapacity.StyleController = this.layoutControl2;
             this.txtCapacity.TabIndex = 10;
             // 
-            // txtPrice
+            // txtVehicleID
             // 
-            this.txtPrice.EditValue = "150";
-            this.txtPrice.Location = new System.Drawing.Point(312, 200);
-            this.txtPrice.MaximumSize = new System.Drawing.Size(0, 40);
-            this.txtPrice.MinimumSize = new System.Drawing.Size(0, 40);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Properties.Appearance.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPrice.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.txtPrice.Properties.Appearance.Options.UseFont = true;
-            this.txtPrice.Properties.Appearance.Options.UseForeColor = true;
-            this.txtPrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtPrice.Size = new System.Drawing.Size(264, 40);
-            this.txtPrice.StyleController = this.layoutControl2;
-            this.txtPrice.TabIndex = 9;
+            this.txtVehicleID.EditValue = "150";
+            this.txtVehicleID.Location = new System.Drawing.Point(337, 200);
+            this.txtVehicleID.MaximumSize = new System.Drawing.Size(0, 40);
+            this.txtVehicleID.MinimumSize = new System.Drawing.Size(0, 40);
+            this.txtVehicleID.Name = "txtVehicleID";
+            this.txtVehicleID.Properties.Appearance.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtVehicleID.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.txtVehicleID.Properties.Appearance.Options.UseFont = true;
+            this.txtVehicleID.Properties.Appearance.Options.UseForeColor = true;
+            this.txtVehicleID.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtVehicleID.Size = new System.Drawing.Size(289, 40);
+            this.txtVehicleID.StyleController = this.layoutControl2;
+            this.txtVehicleID.TabIndex = 9;
             // 
             // dateEditDeparture
             // 
@@ -343,13 +348,13 @@
             this.dateEditDeparture.Properties.MaskSettings.Set("mask", "g");
             this.dateEditDeparture.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
             this.dateEditDeparture.Properties.UseMaskAsDisplayFormat = true;
-            this.dateEditDeparture.Size = new System.Drawing.Size(262, 40);
+            this.dateEditDeparture.Size = new System.Drawing.Size(287, 40);
             this.dateEditDeparture.StyleController = this.layoutControl2;
             this.dateEditDeparture.TabIndex = 8;
             // 
             // comboboxTripStatus
             // 
-            this.comboboxTripStatus.Location = new System.Drawing.Point(312, 120);
+            this.comboboxTripStatus.Location = new System.Drawing.Point(337, 120);
             this.comboboxTripStatus.MaximumSize = new System.Drawing.Size(0, 40);
             this.comboboxTripStatus.MinimumSize = new System.Drawing.Size(0, 40);
             this.comboboxTripStatus.Name = "comboboxTripStatus";
@@ -359,7 +364,7 @@
             this.comboboxTripStatus.Properties.Appearance.Options.UseForeColor = true;
             this.comboboxTripStatus.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboboxTripStatus.Size = new System.Drawing.Size(264, 40);
+            this.comboboxTripStatus.Size = new System.Drawing.Size(289, 40);
             this.comboboxTripStatus.StyleController = this.layoutControl2;
             this.comboboxTripStatus.TabIndex = 7;
             // 
@@ -375,41 +380,39 @@
             this.txtDriverID.Properties.Appearance.Options.UseFont = true;
             this.txtDriverID.Properties.Appearance.Options.UseForeColor = true;
             this.txtDriverID.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtDriverID.Size = new System.Drawing.Size(262, 40);
+            this.txtDriverID.Size = new System.Drawing.Size(287, 40);
             this.txtDriverID.StyleController = this.layoutControl2;
             this.txtDriverID.TabIndex = 6;
             // 
-            // txtVehicleID
+            // txtArrivalCity
             // 
-            this.txtVehicleID.EditValue = "10";
-            this.txtVehicleID.Location = new System.Drawing.Point(312, 40);
-            this.txtVehicleID.MaximumSize = new System.Drawing.Size(0, 40);
-            this.txtVehicleID.MinimumSize = new System.Drawing.Size(0, 40);
-            this.txtVehicleID.Name = "txtVehicleID";
-            this.txtVehicleID.Properties.Appearance.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtVehicleID.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.txtVehicleID.Properties.Appearance.Options.UseFont = true;
-            this.txtVehicleID.Properties.Appearance.Options.UseForeColor = true;
-            this.txtVehicleID.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtVehicleID.Size = new System.Drawing.Size(264, 40);
-            this.txtVehicleID.StyleController = this.layoutControl2;
-            this.txtVehicleID.TabIndex = 5;
+            this.txtArrivalCity.EditValue = "";
+            this.txtArrivalCity.Location = new System.Drawing.Point(337, 40);
+            this.txtArrivalCity.MaximumSize = new System.Drawing.Size(0, 40);
+            this.txtArrivalCity.MinimumSize = new System.Drawing.Size(0, 40);
+            this.txtArrivalCity.Name = "txtArrivalCity";
+            this.txtArrivalCity.Properties.Appearance.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtArrivalCity.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.txtArrivalCity.Properties.Appearance.Options.UseFont = true;
+            this.txtArrivalCity.Properties.Appearance.Options.UseForeColor = true;
+            this.txtArrivalCity.Size = new System.Drawing.Size(289, 40);
+            this.txtArrivalCity.StyleController = this.layoutControl2;
+            this.txtArrivalCity.TabIndex = 5;
             // 
-            // txtRouteID
+            // txtDepartureCity
             // 
-            this.txtRouteID.EditValue = "13";
-            this.txtRouteID.Location = new System.Drawing.Point(18, 40);
-            this.txtRouteID.MaximumSize = new System.Drawing.Size(0, 40);
-            this.txtRouteID.MinimumSize = new System.Drawing.Size(0, 40);
-            this.txtRouteID.Name = "txtRouteID";
-            this.txtRouteID.Properties.Appearance.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtRouteID.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.txtRouteID.Properties.Appearance.Options.UseFont = true;
-            this.txtRouteID.Properties.Appearance.Options.UseForeColor = true;
-            this.txtRouteID.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtRouteID.Size = new System.Drawing.Size(262, 40);
-            this.txtRouteID.StyleController = this.layoutControl2;
-            this.txtRouteID.TabIndex = 4;
+            this.txtDepartureCity.EditValue = "";
+            this.txtDepartureCity.Location = new System.Drawing.Point(18, 40);
+            this.txtDepartureCity.MaximumSize = new System.Drawing.Size(0, 40);
+            this.txtDepartureCity.MinimumSize = new System.Drawing.Size(0, 40);
+            this.txtDepartureCity.Name = "txtDepartureCity";
+            this.txtDepartureCity.Properties.Appearance.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDepartureCity.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.txtDepartureCity.Properties.Appearance.Options.UseFont = true;
+            this.txtDepartureCity.Properties.Appearance.Options.UseForeColor = true;
+            this.txtDepartureCity.Size = new System.Drawing.Size(287, 40);
+            this.txtDepartureCity.StyleController = this.layoutControl2;
+            this.txtDepartureCity.TabIndex = 4;
             // 
             // layoutControlGroup1
             // 
@@ -423,10 +426,11 @@
             this.layoutControlItem7,
             this.layoutControlItem8,
             this.layoutControlItem9,
-            this.layoutControlItem10});
+            this.layoutControlItem10,
+            this.layoutControlItem11});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(16, 16, 16, 16);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(594, 386);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(644, 436);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem4
@@ -435,16 +439,16 @@
             this.layoutControlItem4.AppearanceItemCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.layoutControlItem4.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem4.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem4.Control = this.txtVehicleID;
-            this.layoutControlItem4.Location = new System.Drawing.Point(280, 0);
+            this.layoutControlItem4.Control = this.txtArrivalCity;
+            this.layoutControlItem4.Location = new System.Drawing.Point(305, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.OptionsPrint.AppearanceItem.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.layoutControlItem4.OptionsPrint.AppearanceItem.ForeColor = System.Drawing.Color.Black;
             this.layoutControlItem4.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem4.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(16, 2, 2, 16);
-            this.layoutControlItem4.Size = new System.Drawing.Size(282, 80);
-            this.layoutControlItem4.Text = "Vehicle ID";
+            this.layoutControlItem4.Size = new System.Drawing.Size(307, 80);
+            this.layoutControlItem4.Text = "Arrival City";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(127, 18);
             // 
@@ -454,7 +458,7 @@
             this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem3.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem3.Control = this.txtRouteID;
+            this.layoutControlItem3.Control = this.txtDepartureCity;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.OptionsPrint.AppearanceItem.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -462,8 +466,8 @@
             this.layoutControlItem3.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem3.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem3.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 16, 2, 16);
-            this.layoutControlItem3.Size = new System.Drawing.Size(280, 80);
-            this.layoutControlItem3.Text = "Route ID";
+            this.layoutControlItem3.Size = new System.Drawing.Size(305, 80);
+            this.layoutControlItem3.Text = "Departure City";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(127, 18);
             // 
@@ -481,7 +485,7 @@
             this.layoutControlItem5.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem5.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 16, 2, 16);
-            this.layoutControlItem5.Size = new System.Drawing.Size(280, 80);
+            this.layoutControlItem5.Size = new System.Drawing.Size(305, 80);
             this.layoutControlItem5.Text = "Driver ID";
             this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(127, 18);
@@ -493,14 +497,14 @@
             this.layoutControlItem6.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem6.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem6.Control = this.comboboxTripStatus;
-            this.layoutControlItem6.Location = new System.Drawing.Point(280, 80);
+            this.layoutControlItem6.Location = new System.Drawing.Point(305, 80);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.OptionsPrint.AppearanceItem.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.layoutControlItem6.OptionsPrint.AppearanceItem.ForeColor = System.Drawing.Color.Black;
             this.layoutControlItem6.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem6.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem6.Padding = new DevExpress.XtraLayout.Utils.Padding(16, 2, 2, 16);
-            this.layoutControlItem6.Size = new System.Drawing.Size(282, 80);
+            this.layoutControlItem6.Size = new System.Drawing.Size(307, 80);
             this.layoutControlItem6.Text = "Trip Status";
             this.layoutControlItem6.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(127, 18);
@@ -519,7 +523,7 @@
             this.layoutControlItem7.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem7.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem7.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 16, 2, 16);
-            this.layoutControlItem7.Size = new System.Drawing.Size(280, 80);
+            this.layoutControlItem7.Size = new System.Drawing.Size(305, 80);
             this.layoutControlItem7.Text = "Departure Time";
             this.layoutControlItem7.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(127, 18);
@@ -530,16 +534,16 @@
             this.layoutControlItem8.AppearanceItemCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem8.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem8.Control = this.txtPrice;
-            this.layoutControlItem8.Location = new System.Drawing.Point(280, 160);
+            this.layoutControlItem8.Control = this.txtVehicleID;
+            this.layoutControlItem8.Location = new System.Drawing.Point(305, 160);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.OptionsPrint.AppearanceItem.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.layoutControlItem8.OptionsPrint.AppearanceItem.ForeColor = System.Drawing.Color.Black;
             this.layoutControlItem8.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem8.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem8.Padding = new DevExpress.XtraLayout.Utils.Padding(16, 2, 2, 16);
-            this.layoutControlItem8.Size = new System.Drawing.Size(282, 80);
-            this.layoutControlItem8.Text = "Price";
+            this.layoutControlItem8.Size = new System.Drawing.Size(307, 80);
+            this.layoutControlItem8.Text = "Vehicle ID";
             this.layoutControlItem8.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem8.TextSize = new System.Drawing.Size(127, 18);
             // 
@@ -557,7 +561,7 @@
             this.layoutControlItem9.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem9.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem9.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 16, 2, 16);
-            this.layoutControlItem9.Size = new System.Drawing.Size(280, 114);
+            this.layoutControlItem9.Size = new System.Drawing.Size(305, 80);
             this.layoutControlItem9.Text = "Capacity";
             this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(127, 18);
@@ -569,14 +573,14 @@
             this.layoutControlItem10.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem10.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem10.Control = this.txtPassengerNumber;
-            this.layoutControlItem10.Location = new System.Drawing.Point(280, 240);
+            this.layoutControlItem10.Location = new System.Drawing.Point(305, 240);
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.OptionsPrint.AppearanceItem.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.layoutControlItem10.OptionsPrint.AppearanceItem.ForeColor = System.Drawing.Color.Black;
             this.layoutControlItem10.OptionsPrint.AppearanceItem.Options.UseFont = true;
             this.layoutControlItem10.OptionsPrint.AppearanceItem.Options.UseForeColor = true;
             this.layoutControlItem10.Padding = new DevExpress.XtraLayout.Utils.Padding(16, 2, 2, 16);
-            this.layoutControlItem10.Size = new System.Drawing.Size(282, 114);
+            this.layoutControlItem10.Size = new System.Drawing.Size(307, 80);
             this.layoutControlItem10.Text = "Passenger Numbers";
             this.layoutControlItem10.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem10.TextSize = new System.Drawing.Size(127, 18);
@@ -587,20 +591,50 @@
             this.flowLayoutPanel1.Controls.Add(this.createButton);
             this.flowLayoutPanel1.Controls.Add(this.discardButton);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 490);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 540);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 16, 16, 0);
             this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(0, 50);
             this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(0, 50);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.tablePanel1.SetRow(this.flowLayoutPanel1, 2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(582, 50);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(632, 50);
             this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.EditValue = "40";
+            this.txtPrice.Location = new System.Drawing.Point(18, 360);
+            this.txtPrice.MaximumSize = new System.Drawing.Size(0, 40);
+            this.txtPrice.MinimumSize = new System.Drawing.Size(0, 40);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Properties.Appearance.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtPrice.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.txtPrice.Properties.Appearance.Options.UseFont = true;
+            this.txtPrice.Properties.Appearance.Options.UseForeColor = true;
+            this.txtPrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtPrice.Size = new System.Drawing.Size(608, 40);
+            this.txtPrice.StyleController = this.layoutControl2;
+            this.txtPrice.TabIndex = 12;
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.AppearanceItemCaption.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.layoutControlItem11.AppearanceItemCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.layoutControlItem11.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem11.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem11.Control = this.txtPrice;
+            this.layoutControlItem11.Location = new System.Drawing.Point(0, 320);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(612, 84);
+            this.layoutControlItem11.Text = "Price";
+            this.layoutControlItem11.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(127, 18);
             // 
             // AddTripForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 564);
+            this.ClientSize = new System.Drawing.Size(648, 614);
             this.Controls.Add(this.tablePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -621,13 +655,13 @@
             this.layoutControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtPassengerNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCapacity.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVehicleID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditDeparture.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditDeparture.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboboxTripStatus.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDriverID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVehicleID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRouteID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtArrivalCity.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDepartureCity.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
@@ -638,6 +672,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -658,15 +694,15 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControl layoutControl2;
         private DevExpress.XtraEditors.TextEdit txtDriverID;
-        private DevExpress.XtraEditors.TextEdit txtVehicleID;
-        private DevExpress.XtraEditors.TextEdit txtRouteID;
+        private DevExpress.XtraEditors.TextEdit txtArrivalCity;
+        private DevExpress.XtraEditors.TextEdit txtDepartureCity;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraEditors.TextEdit txtPassengerNumber;
         private DevExpress.XtraEditors.TextEdit txtCapacity;
-        private DevExpress.XtraEditors.TextEdit txtPrice;
+        private DevExpress.XtraEditors.TextEdit txtVehicleID;
         private DevExpress.XtraEditors.DateEdit dateEditDeparture;
         private DevExpress.XtraEditors.ComboBoxEdit comboboxTripStatus;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
@@ -674,5 +710,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraEditors.TextEdit txtPrice;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
     }
 }

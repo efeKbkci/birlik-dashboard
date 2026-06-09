@@ -10,7 +10,7 @@ namespace Dashboard.Shared.Constants
         private const int _dockerPort = 8080;
         private const int _vsPort = 5000;
 
-        public static readonly string BaseUrl = $"http://localhost:{_vsPort}/";
+        public static readonly string BaseUrl = $"http://localhost:{_dockerPort}/";
 
         public static class Admins
         {
@@ -74,6 +74,12 @@ namespace Dashboard.Shared.Constants
             public static string Patch(int id) => $"{Base}/{id}";
             public static string GetDriverManagementPage(int companyId) => $"{Base}/company/{companyId}/management-page";
             public static string Create() => $"{Base}";
+        }
+
+        public static class Routes
+        {
+            public const string Base = "api/routes";
+            public static string GetByCityName(string departureCity, string arrivalCity) => $"{Base}/cities?DepartureCityName={departureCity}&ArrivalCityName={arrivalCity}";
         }
 
         // İlerleyen aşamalarda diğer varlıklar buraya eklenecek

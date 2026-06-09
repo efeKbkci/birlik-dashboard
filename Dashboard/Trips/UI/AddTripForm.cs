@@ -19,6 +19,7 @@ namespace Dashboard.Trips.UI
 {
     public partial class AddTripForm : DevExpress.XtraEditors.XtraForm
     {
+        private readonly ITripManagementService _service = new TripManagementApiService();
         public AddTripForm()
         {
             InitializeComponent();
@@ -37,11 +38,14 @@ namespace Dashboard.Trips.UI
 
         private async void CreateButtonClicked(object sender, EventArgs e)
         {
+            string departureCity = txtDepartureCity.Text;
+            string arrivalCity = txtArrivalCity.Text;
+
             // 2. DTO Hazırla
             var newTrip = new TripCreateDto()
             {
                 CompanyId = GlobalState.Session.CompanyDto.Id,
-                RouteId = Convert.ToInt32(txtRouteID.Text),
+                RouteId = 0,
                 VehicleId = Convert.ToInt32(txtVehicleID.Text),
                 DriverId = Convert.ToInt32(txtDriverID.Text),
                 DepartureTime = dateEditDeparture.DateTime.ToUniversalTime(),
@@ -54,8 +58,8 @@ namespace Dashboard.Trips.UI
             var handle = SplashScreenManager.ShowOverlayForm(this);
             try
             {
-                var service = new TripManagementApiService();
-                await service.CreateTripAsync(newTrip);
+
+                await _service.CreateTripAsync(departureCity, arrivalCity, newTrip);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
