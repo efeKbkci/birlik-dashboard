@@ -7,9 +7,10 @@ namespace Dashboard.Shared.Constants
 {
     public static class ApiEndpoints
     {
-        // Docker       : 8080 
-        // VisualStudio : 5000
-        public const string BaseUrl = "http://localhost:8080/";
+        private const int _dockerPort = 8080;
+        private const int _vsPort = 5000;
+
+        public static readonly string BaseUrl = $"http://localhost:{_vsPort}/";
 
         public static class Admins
         {

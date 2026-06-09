@@ -37,10 +37,12 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.tripTable = new DevExpress.XtraGrid.GridControl();
             this.dataTableView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.status = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemImageComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox();
             this.htmlContentControl3 = new DevExpress.XtraEditors.HtmlContentControl();
             this.svgImageCollection1 = new DevExpress.Utils.SvgImageCollection(this.components);
             this.htmlContentControl2 = new DevExpress.XtraEditors.HtmlContentControl();
@@ -52,6 +54,7 @@
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tripTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl2)).BeginInit();
@@ -157,6 +160,8 @@
             this.tripTable.MainView = this.dataTableView;
             this.tripTable.Margin = new System.Windows.Forms.Padding(0);
             this.tripTable.Name = "tripTable";
+            this.tripTable.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemImageComboBox1});
             this.tripTable.Size = new System.Drawing.Size(985, 404);
             this.tripTable.TabIndex = 8;
             this.tripTable.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -179,18 +184,34 @@
             this.dataTableView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.dataTableView.ColumnPanelRowHeight = 40;
             this.dataTableView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn4,
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
             this.status});
             this.dataTableView.GridControl = this.tripTable;
             this.dataTableView.Name = "dataTableView";
-            this.dataTableView.OptionsBehavior.Editable = false;
             this.dataTableView.OptionsView.ShowGroupPanel = false;
             this.dataTableView.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.True;
             this.dataTableView.OptionsView.ShowIndicator = false;
             this.dataTableView.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.False;
             this.dataTableView.RowHeight = 40;
+            this.dataTableView.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.dataTableView_CellValueChanged);
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.gridColumn4.Caption = "Id";
+            this.gridColumn4.FieldName = "Id";
+            this.gridColumn4.MinWidth = 25;
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.AllowEdit = false;
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 0;
+            this.gridColumn4.Width = 94;
             // 
             // gridColumn1
             // 
@@ -198,8 +219,9 @@
             this.gridColumn1.FieldName = "FirstName";
             this.gridColumn1.MinWidth = 25;
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.VisibleIndex = 1;
             this.gridColumn1.Width = 94;
             // 
             // gridColumn2
@@ -208,8 +230,9 @@
             this.gridColumn2.FieldName = "LastName";
             this.gridColumn2.MinWidth = 25;
             this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.VisibleIndex = 2;
             this.gridColumn2.Width = 94;
             // 
             // gridColumn3
@@ -218,19 +241,28 @@
             this.gridColumn3.FieldName = "PhoneNumber";
             this.gridColumn3.MinWidth = 25;
             this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 3;
             this.gridColumn3.Width = 94;
             // 
             // status
             // 
             this.status.Caption = "Status";
+            this.status.ColumnEdit = this.repositoryItemImageComboBox1;
             this.status.FieldName = "Status";
             this.status.MinWidth = 25;
             this.status.Name = "status";
             this.status.Visible = true;
-            this.status.VisibleIndex = 3;
+            this.status.VisibleIndex = 4;
             this.status.Width = 94;
+            // 
+            // repositoryItemImageComboBox1
+            // 
+            this.repositoryItemImageComboBox1.AutoHeight = false;
+            this.repositoryItemImageComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemImageComboBox1.Name = "repositoryItemImageComboBox1";
             // 
             // htmlContentControl3
             // 
@@ -285,6 +317,7 @@
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tripTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.htmlContentControl2)).EndInit();
@@ -308,5 +341,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn status;
         private DevExpress.XtraEditors.HtmlContentControl htmlContentControl3;
+        private DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox repositoryItemImageComboBox1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
     }
 }

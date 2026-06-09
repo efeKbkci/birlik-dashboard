@@ -1,4 +1,5 @@
 ﻿using Birlik.Shared.DTOs.Page;
+using Birlik.Shared.Enums;
 using Dashboard.Drivers.Interfaces;
 using Dashboard.Drivers.Services;
 using Dashboard.Shared;
@@ -25,6 +26,12 @@ namespace Dashboard.Drivers.UI
         public DriversManagementViewHTML()
         {
             InitializeComponent();
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            repositoryItemImageComboBox1.Items.AddEnum(typeof(DriverStatus));
         }
 
         public Task RefreshDataAsync()
@@ -90,6 +97,22 @@ namespace Dashboard.Drivers.UI
             else if (result == DialogResult.Cancel)
             {
                 XtraMessageBox.Show("Kullanıcı işlemi iptal etti veya pencereyi kapattı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private async void dataTableView_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            if (e.Column.FieldName == "Status")
+            {
+                // Arka plandaki Value "1" veya "4" gibi bir sayıdır, onu Enum'a dönüştürüyoruz
+                DriverStatus newStatus = (DriverStatus)e.Value;
+
+                var changedRow = dataTableView.GetRow(e.RowHandle) as DriverListDto;
+
+                if (changedRow != null)
+                {
+                    await _driverService.UpdateDriverStatusAsync(changedRow.Id, newStatus);
+                }
             }
         }
     }

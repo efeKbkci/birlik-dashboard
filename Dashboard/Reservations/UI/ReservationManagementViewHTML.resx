@@ -245,7 +245,7 @@
     
     &lt;div class="kpi-card"&gt;
         &lt;div class="kpi-top"&gt;
-            &lt;span class="kpi-title"&gt;Approved Today&lt;/span&gt;
+            &lt;span class="kpi-title"&gt;Approved Reservations&lt;/span&gt;
             &lt;img src="check" class="kpi-icon" alt="Wrench" /&gt;
         &lt;/div&gt;
         &lt;div class="kpi-val"&gt;${Approved}&lt;/div&gt;
@@ -253,10 +253,10 @@
     
     &lt;div class="kpi-card no-margin"&gt;
         &lt;div class="kpi-top"&gt;
-            &lt;span class="kpi-title"&gt;Total Capacity Utilization&lt;/span&gt;
+            &lt;span class="kpi-title"&gt;Canceled Reservations&lt;/span&gt;
             &lt;img src="arrow" class="kpi-icon" alt="Driver" /&gt;
         &lt;/div&gt;
-        &lt;div class="kpi-val"&gt;${Utilization}&lt;/div&gt;
+        &lt;div class="kpi-val"&gt;${Canceled}&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</value>
   </data>
@@ -271,13 +271,16 @@
     border-bottom: 1px solid #D1D5DB; /* Uzayan ince gri çizgi */
 }
 .tab {
-    padding: 0 0 16px 16px;
+    padding: 0 8px 16px 8px;
     margin-right: 16px;
     font-size: 14px;
     font-weight: 600;
     color: #001937;
     cursor: pointer;
     border-bottom: 2px solid transparent; 
+}
+.tab:hover {
+    background-color: #f0f0f0; 
 }</value>
   </data>
   <data name="htmlContentControl1.HtmlTemplate.Template" xml:space="preserve">

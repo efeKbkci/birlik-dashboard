@@ -238,19 +238,12 @@
     <Compile Include="Shared\UI\ComponentFactory\MyHeader.Designer.cs">
       <DependentUpon>MyHeader.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shared\UI\ComponentFactory\MyInformationCard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Shared\UI\ComponentFactory\MyInformationCard.Designer.cs">
-      <DependentUpon>MyInformationCard.cs</DependentUpon>
-    </Compile>
     <Compile Include="Shared\UI\ComponentFactory\MySecondaryButton.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Shared\UI\ComponentFactory\MySecondaryButton.Designer.cs">
       <DependentUpon>MySecondaryButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shared\UI\ComponentFactory\ThemeManager.cs" />
     <Compile Include="Stops\Interfaces\IStopManagementService.cs" />
     <Compile Include="Stops\Services\StopManagementApiService.cs" />
     <Compile Include="Stops\UI\StopManagementViewHTML.cs">
@@ -317,9 +310,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Shared\UI\ComponentFactory\MyHeader.resx">
       <DependentUpon>MyHeader.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Shared\UI\ComponentFactory\MyInformationCard.resx">
-      <DependentUpon>MyInformationCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shared\UI\ComponentFactory\MySecondaryButton.resx">
       <DependentUpon>MySecondaryButton.cs</DependentUpon>

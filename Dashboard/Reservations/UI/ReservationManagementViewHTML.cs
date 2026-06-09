@@ -1,8 +1,10 @@
 ﻿using Birlik.Shared.DTOs.Page;
+using Birlik.Shared.Enums;
 using Dashboard.Reservations.Interfaces;
 using Dashboard.Reservations.Services;
 using Dashboard.Shared;
 using Dashboard.Shared.Interfaces;
+using DevExpress.Data.Filtering;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using System;
@@ -20,10 +22,13 @@ namespace Dashboard.Reservations.UI
     public partial class ReservationManagementViewHTML : XtraUserControl, IRefreshable
     {
         private readonly IReservationManagementService _reservationService = new ReservationManagementApiService();
+        private string? _activeTab = null;
 
         public ReservationManagementViewHTML()
         {
             InitializeComponent();
+
+            htmlContentControl1.ElementMouseClick += HtmlContentControl1_ElementMouseClick;
         }
 
         public async Task RefreshDataAsync()
@@ -52,7 +57,8 @@ namespace Dashboard.Reservations.UI
                     htmlContentControl2.DataContext = new
                     {
                         Requires = pageData.RequiresApprovalCount,
-                        Approved = pageData.ApprovedTodayCount,
+                        Approved = pageData.ApprovedCount,
+                        Canceled = pageData.CanceledCount,
                     };
 
                     // GridControl ataması devam ediyor...
@@ -129,6 +135,40 @@ namespace Dashboard.Reservations.UI
 
                 e.DisplayText = localDate.ToString("dd.MM.yyyy HH:mm");
             }
+        }
+
+        private void HtmlContentControl1_ElementMouseClick(object sender, DevExpress.Utils.Html.DxHtmlElementMouseEventArgs e)
+        {
+            // Boş bir yere tıklandıysa veya ID'si olmayan bir elementse işlem yapma
+            if (string.IsNullOrEmpty(e.ElementId)) return;
+
+            // 1. KONTROL: Aynı sekmeye mi tıklandı? (Toggle Mantığı)
+            if (e.ElementId == _activeTab)
+            {
+                // Filtreyi sıfırla ve işlemi anında bitir. Switch'e girmeye gerek kalmaz.
+                dataTableView.ActiveFilterCriteria = null;
+                _activeTab = null;
+                return;
+            }
+
+            // 2. YENİ SEKME: Hangi sekmeye tıklandıysa sadece onun filtresini ayarla
+            switch (e.ElementId)
+            {
+                case "rejectedTab":
+                    dataTableView.ActiveFilterCriteria = new BinaryOperator("ReservationStatus", ReservationStatus.Canceled, BinaryOperatorType.Equal);
+                    break;
+
+                case "approvedTab":
+                    dataTableView.ActiveFilterCriteria = new BinaryOperator("ReservationStatus", ReservationStatus.Confirmed, BinaryOperatorType.Equal);
+                    break;
+
+                case "pendingTab":
+                    dataTableView.ActiveFilterCriteria = new BinaryOperator("ReservationStatus", ReservationStatus.Pending, BinaryOperatorType.Equal);
+                    break;
+            }
+
+            // 3. GÜNCELLEME: Switch işlemi bittikten sonra aktif sekmeyi kaydet
+            _activeTab = e.ElementId;
         }
     }
 }

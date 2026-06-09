@@ -59,6 +59,7 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.myHeader1 = new Dashboard.Shared.UI.ComponentFactory.MyHeader();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).BeginInit();
             this.flyoutPanel1.SuspendLayout();
@@ -460,6 +461,7 @@
             this.dataTableView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.stopId,
             this.gridColumn2,
+            this.gridColumn1,
             this.gridColumn3});
             this.dataTableView.GridControl = this.stopTable;
             this.dataTableView.Name = "dataTableView";
@@ -486,7 +488,7 @@
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Address";
+            this.gridColumn2.Caption = "Name";
             this.gridColumn2.FieldName = "Name";
             this.gridColumn2.MinWidth = 25;
             this.gridColumn2.Name = "gridColumn2";
@@ -501,7 +503,7 @@
             this.gridColumn3.MinWidth = 25;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 3;
             this.gridColumn3.Width = 94;
             // 
             // myHeader1
@@ -523,6 +525,16 @@
             this.myHeader1.SubTitle = "Manage network nodes and facility attributes";
             this.myHeader1.TabIndex = 1;
             this.myHeader1.Title = "Stop Management";
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "RouteName";
+            this.gridColumn1.FieldName = "RouteName";
+            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 2;
+            this.gridColumn1.Width = 94;
             // 
             // StopManagementViewHTML
             // 
@@ -596,5 +608,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn stopId;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
     }
 }
